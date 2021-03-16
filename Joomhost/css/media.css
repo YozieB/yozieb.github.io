@@ -16,6 +16,9 @@
         flex-wrap: wrap;
 
     }
+    .logos-main{
+        display: none;
+    }
     .price-item{
         max-width: 48%;
         margin-bottom: 50px;
@@ -109,7 +112,11 @@ justify-content: center;
 .price-item{
     max-width: 100%;
 }
-
+@media(max-width: 550px){
+    .footer-form{
+        display: none;
+    }
+}
 @media (max-width: 399px){
     .reviews-box{
         width: 100%;
