@@ -1,0 +1,26 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+body{
+    background-image: url(../images/bg-2.jpg);
+    background-position: 25% 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Proxima Nova Lt", sans-serif;
+    color: #fff; 
+}
