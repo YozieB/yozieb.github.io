@@ -11,4 +11,9 @@ $(function(){
             1200
           );
       });
+      $('.sidebar__icon').on('click', function(){
+        $('.content__sidebar').toggle();
+    
+    });
+
 });
