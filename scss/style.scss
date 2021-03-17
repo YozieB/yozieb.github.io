@@ -112,6 +112,17 @@
     display: inline-block;
     border-bottom: 4px solid $pink;
     padding-bottom: 15px;
+    span{
+        color: $green;
+    }
+    .inprogress{
+        color: $orange;
+    }
+}
+.title-sub{
+    opacity: 0.7;
+    font-size: 20px;
+    border:none;
 }
 .content__info-items {
     display: flex;
@@ -145,7 +156,7 @@
         font-family: "Proxima Nova Lt", sans-serif;
         padding-top: 25px;
         span{
-            color: rgb(9, 231, 39)
+            color: rgb(9, 231, 39);
         }
         .inprogress{
             color:rgb(233, 135, 23);
