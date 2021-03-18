@@ -126,6 +126,7 @@
 .content__info-items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: 65px;
     margin-right: 15px;
 }
