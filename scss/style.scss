@@ -111,17 +111,17 @@
     display: inline-block;
     border-bottom: 4px solid $pink;
     padding-bottom: 15px;
-    span{
+    span {
         color: $green;
     }
-    .inprogress{
+    .inprogress {
         color: $orange;
     }
 }
-.title-sub{
+.title-sub {
     opacity: 0.7;
     font-size: 21px;
-    border:none;
+    border: none;
 }
 .content__info-items {
     display: flex;
@@ -155,11 +155,11 @@
         font-size: 26px;
         font-family: "Proxima Nova Lt", sans-serif;
         padding-top: 25px;
-        span{
+        span {
             color: rgb(9, 231, 39);
         }
-        .inprogress{
-            color:rgb(233, 135, 23);
+        .inprogress {
+            color: rgb(233, 135, 23);
         }
     }
 }
@@ -235,12 +235,11 @@
         text-align: center;
         cursor: pointer;
         margin-bottom: 75px;
-        transition: all .2s;
-        &:hover{
+        transition: all 0.2s;
+        &:hover {
             background-color: rgb(126, 40, 114);
         }
     }
-    
 }
 .about {
     margin-left: 65px;
@@ -371,3 +370,69 @@ pre {
     }
 }
 // skills end
+
+@media (max-width: 1200px) {
+    .content {
+        flex-direction: column;
+        &__info {
+            padding-top: 140px;
+            text-align: center;
+        }
+        &__sidebar {
+            display: flex;
+            width: 100%;
+            padding-top: 10px;
+            height: 157px;
+            z-index: 2;
+            position: fixed;
+            background-image: url(../images/bg-2.jpg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: initial;
+            &-img{
+                width: 135px;
+                height: 135px;
+            }
+            &-menu a{
+                width: 125px;
+                text-align: center;
+            }
+            &-menu{
+                a:before {
+                    content: "";
+                    height: 0;
+                    transition: all 0.3s;
+                }
+                & a:hover:before {
+                    content: "";
+                    position: absolute;
+                    background-color: $pink;
+                    height: 10px;
+                    width: 125px;
+                    left: 37%;
+                    top: 72px;
+                }
+            }
+        }
+        &__sidebar-menu {
+            display: flex;
+        }
+
+    }
+    .about__descr{
+        text-align: left;
+    }
+    .sidebar__inner {
+        display: flex;
+    }
+    .sidebar__logos{
+        padding-top: 60px;
+        img{
+            margin-left: 20px;
+        }
+    }
+    .title-sub {
+        display: block;
+        margin-top: -40px;
+    }
+}
