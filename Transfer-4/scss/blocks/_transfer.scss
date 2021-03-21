@@ -1,0 +1,54 @@
+.hide{
+    height: 300px;
+}
+.hide:after{
+    content: "";
+    display: block;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0), #f5f5f5)
+}
+
+
+.transfer {
+    font-weight: 500;
+    &__title {
+        font-size: 30px;
+        color: #1d1d1d;
+        margin-bottom: 28px;
+    }
+    &__wrapper{
+        overflow: hidden;
+        position: relative; 
+        margin-bottom: 30px;
+    }
+    &__item {
+        
+        &-title {
+            font-size: 20px;
+            color: $blue;
+            margin-bottom: 11px;
+        }
+        &-text{
+            font-weight: 300;
+            color: #1d1d1d;
+            margin-bottom: 25px;
+        }
+    }
+    &__btn{
+        display: block;
+        width: 148px;
+        height: 28px;
+        font-size: 15px;
+        margin: 0 auto;
+        background-color: $blue;
+        color: #fff;
+        border-radius: 14px;
+        padding: 7px 18px;
+        margin-bottom: 75px;
+        text-align: center;
+    }
+}

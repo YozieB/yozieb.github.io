@@ -1,0 +1,27 @@
+.footer__order{
+    color: #f5f5f5;
+    background-color: black;
+    padding: 12px 0;
+    text-align: center;
+    &-title{
+        font-size: 18.5px;
+        margin-bottom: 3px;
+    }
+    &-tel{
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 9px;
+    }
+    &-descr{
+        font-size: 14.5px;
+        margin-bottom: 11px;
+    }
+    &-btn{
+        font-weight: 600;
+        padding: 10px 26px;
+        border-radius: 16.8px;
+        box-shadow: 0.7px 0.7px 4px 0 rgba(0, 0, 0, 0.36);
+        background-color: #f5f5f5;
+        color: #000;
+    }
+}

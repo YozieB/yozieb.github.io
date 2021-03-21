@@ -1,0 +1,99 @@
+.reviews {
+    padding: 18px 110px;
+    font-weight: 500;
+    background-image: url(../../images/reviews-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    &__title {
+        font-size: 30px;
+        font-weight: 500;
+        color: #18515d;
+        text-align: center;
+        margin-bottom: 70px;
+        &-video{
+            font-size: 30px;
+            font-weight: 500;
+            color: #1d1d1d;
+            margin-bottom: 28px;
+        }
+    }
+    &__video{
+        &-item{
+            width: 610px;
+            margin-left: 27px;
+            height: 324px;
+            margin: 0 auto;
+            margin-bottom: 78px;
+            box-shadow: 0px 3px 9px 0 rgba(0, 0, 0, 0.43);
+        }
+    }
+    &__slider {
+        .slick-list {
+            margin: 0 -50px;
+        }
+        .slick-slide {
+            margin: 0 63px;
+            padding-bottom: 40px;
+        }
+        .slick-track {
+            margin-top: 50px;
+        }
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            li {
+                margin-right: 5px;
+                &.slick-active {
+                    button {
+                        background-color: $blue;
+                    }
+                }
+            }
+        }
+        .slick-dots button {
+            width: 6px;
+            height: 12px;
+            font-size: 0;
+            border-radius: 50%;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            background-color: #fff;
+        }
+
+        &-item {
+            width: 280px;
+            min-height: 340px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 21px 0 rgba(0, 0, 0, 0.43);
+            background-color: #ffffff;
+            position: relative;
+            padding: 70px 20px 20px 20px;
+        }
+    }
+    &__box {
+        &-photo {
+            position: absolute;
+            z-index: 15 !important;
+            top: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &-name {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &-date {
+            text-align: right;
+            margin-top: 35px;
+        }
+    }
+}
+
+
+.slider__wrapper{
+    
+
+}
