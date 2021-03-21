@@ -12,7 +12,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 15px;
+        margin-bottom: 16px;
     }
     &__title {
         font-weight: 500;
@@ -21,7 +21,7 @@
         display: inline-block;
         margin-bottom: 15px;
     }
-    
+
     &__menu {
         &-list {
             font-weight: 300;
@@ -31,11 +31,85 @@
             }
         }
         &-logos {
-            a{
-                &:nth-child(2){
+            a {
+                &:nth-child(2) {
                     margin: 0 15px;
                 }
             }
+        }
+    }
+
+    &__form {
+        input {
+            display: block;
+            height: 40px;
+            width: 334px;
+            margin-bottom: 13px;
+            padding: 10px;
+            border-radius: 3px;
+            outline: none;
+            border: solid 1px #000000;
+            &::placeholder{
+                color: #3f3f3f;
+            }
+        }
+        textarea {
+            &::placeholder{
+                color: #3f3f3f;
+            }
+            resize: none;
+            outline: none;
+            height: 116px;
+            border-radius: 3px;
+            width: 334px;
+            margin-bottom: 16px;
+            padding-top: 13px;
+            padding-left: 10px;
+            border: solid 1px #000000;
+        }
+        &-submit {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            padding: 8px 37px;
+            background-color: $blue;
+            border-radius: 16px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    &__bottom{
+        text-align: center;
+    }
+}
+
+@media(max-width: 745px){
+    .footer__inner{
+        display: block;
+    }
+    .footer__menu{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .footer__form{
+        input {
+            display: inline;
+        }
+        &-submit{
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(max-width: 424px){
+    .footer__form{
+        input{
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
         }
     }
 }

@@ -1,11 +1,12 @@
 .carousel__easy {
     font-weight: 500;
     margin-bottom: 55px;
+    overflow: hidden;
 }
 .easy {
     &__wrapper {
         display: grid;
-        grid-template-columns: 625px 435px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
         grid-column-gap: 61px;
         position: relative;
     }
@@ -54,6 +55,7 @@
             }
         }
     }
+
     .slick-dots button {
         font-size: 0;
         cursor: pointer;
@@ -64,5 +66,41 @@
         background-color: white;
         outline: none;
         opacity: 0.6;
+    }
+}
+
+@media (max-width: 890px) {
+    .slick-slide img{
+        width: 100%;
+    }
+    .easy__slider{
+        .slick-dots{
+            position: inherit;
+            bottom: 38px;
+        }
+    }
+
+    .easy {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            grid-column-gap: 11px;
+            position: relative;
+        }
+        &__info-list{
+            margin-bottom: 12px;
+        }
+        &__info{
+            &-title{
+                font-size: 25px;
+            }
+            &-list{
+                font-size: 14px;
+                ol{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
     }
 }
