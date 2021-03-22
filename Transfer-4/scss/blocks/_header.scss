@@ -1,6 +1,4 @@
 .header {
-    border-top: 8px solid $blue;
-    padding-top: 8px;
     background-image: url(../images/header-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -8,10 +6,21 @@
     font-weight: 500;
     overflow: hidden;
     &__top {
-        display: flex;
+/*         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin-bottom: 153px;
+        align-items: center; */
+        position: fixed;
+        width: 100%;
+        box-shadow: 0px -3px 15px 0 rgba(0, 0, 0, 0.2);
+        border-top: 8px solid #18515d;
+        z-index: 7;
+        background-color: rgba(255,255,255, 0.9);
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
         &-btn {
             background-color: $blue;
             padding: 6px 18px;
@@ -20,6 +29,9 @@
         }
     }
     &__menu {
+ /*        position: fixed;
+        right: 15px;
+        z-index: 6; */
         .hamburger {
             display: none;
         }
@@ -36,6 +48,7 @@
     &__bottom {
         display: flex;
         justify-content: space-between;
+        margin-top: 153px;
         &-text {
             max-width: 100%;
             .title {
@@ -76,9 +89,6 @@
         }
     }
     .header__bottom-text {
-        .title {
-            font-size: 38px;
-        }
         .number {
             font-size: 42px;
         }
@@ -113,7 +123,8 @@
         }
     }
     .header__menu {
-        position: relative;
+        position: fixed;
+        right: 15px;
         .hamburger {
             display: block;
             z-index: 6;
@@ -121,15 +132,15 @@
             right: 10px;
             top: 50%;
             transform: translateY(-50%);
-            width: 26px;
+            width: 30px;
             height: 12px;
             span {
                 display: block;
                 background-color: $blue;
-                height: 3px;
+                height: 4px;
                 width: 100%;
                 border-radius: 15px;
-                margin-bottom: 2px;
+                margin-bottom: 3px;
                 transition: 0.5s all;
             }
             &_active {
