@@ -1,0 +1,25 @@
+@media(max-width: 1280px){
+    .contact{
+        padding-left: 0;
+        padding-bottom: 0;
+        &__inner{
+            display: block;
+        }
+        &__item{
+            text-align: center;
+            img{
+                transform: rotate(90deg);
+            }
+            &-title{
+                margin: 0 auto 20px;
+            }
+            &-list{
+                margin-bottom: 10px;
+            }
+        }
+        &__map{
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}

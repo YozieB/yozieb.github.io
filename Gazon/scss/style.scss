@@ -1,0 +1,64 @@
+@import "vars";
+@import "global";
+@import "fonts";
+
+// MAIN PAGE
+
+@import "blocks/main";
+
+//ITEM CARD
+
+@import "blocks/card";
+
+ //DELIVERY
+
+@import "blocks/delivery";
+
+//CONTACT
+
+@import "blocks/contact";
+
+//USAGE ITEM
+
+@import "blocks/usage";
+
+//USAGE ITEM
+
+@import "blocks/usage-item";
+
+//INFO
+
+@import "blocks/info.scss"; 
+
+
+
+
+//ADAPTIVE
+
+
+ //HEADER--FOOTER
+@import "media/media-header";
+
+//main
+
+@import "media/media-main";
+
+//CARDS
+
+@import "media/media-card"; 
+
+//CONTACT
+
+@import "media/media-contact";
+
+//DELIVERY
+
+@import "media/media-delivery";
+
+//INFO
+
+@import "media/media-info";
+
+//USAGE
+
+@import "media/media-usage";

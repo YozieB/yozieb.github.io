@@ -1,0 +1,73 @@
+@media (max-width: 1100px) {
+    .usage__inner-2 {
+        display: block;
+    }
+    .usage__item-2 {
+        height: auto;
+    }
+    .usage__title-item-2 {
+        margin: 0 0 20px 0;
+    }
+    .usage__img-2 {
+        img {
+            width: 100%;
+        }
+    }
+    .product {
+        padding-top: 20px;
+    }
+    .usage__item-littleimg {
+        display: block;
+        img {
+            width: 100%;
+        }
+        img:nth-child(1) {
+            margin-bottom: 20px;
+        }
+    }
+    .profit__item-7 {
+        margin-top: 0;
+    }
+    .usage__item-img-5 {
+        display: block;
+        height: auto;
+        width: 100%;
+        img {
+            max-width: 100% !important;
+            &:nth-child(1){
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 910px) {
+    .use__inner {
+        display: block;
+        margin-bottom: 0;
+        &-last {
+            margin-top: 0;
+        }
+    }
+    .use__item {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .use__item-icon-last {
+        top: -60px;
+        left: 40%;
+        transform: rotate(90deg);
+    }
+    .use__item-title {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 550px) {
+    .use__item-bg {
+        width: 100%;
+    }
+    .use__item {
+        width: 100%;
+    }
+}
