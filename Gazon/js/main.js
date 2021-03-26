@@ -56,7 +56,8 @@ $(function(){
 
 
      let headerHeight = $('.header').height();
-     $('.slider__image').css('Height', calc('100vh + -${headerHeight}px'));
+     $('slider__image').css('height', 'calc(100vh + -${headerHeight}px)');
+     
 
   });
 })(jQuery);
