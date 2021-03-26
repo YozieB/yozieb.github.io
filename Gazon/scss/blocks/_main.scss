@@ -74,15 +74,16 @@
 
 .slider {
     margin-bottom: 28px;
-    &__item {
-        width: 100%;
-        height: auto;
-        max-height: 50vh;
-        img {
+    &__image {
+        height: calc(100vh + -44px);
+        img{
+            width: 100%;
+        }
+        /* img {
             min-width: 100%;
             min-height: 100%;
             object-fit: cover;
-        }
+        } */
     }
 }
 

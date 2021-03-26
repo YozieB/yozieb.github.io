@@ -48,4 +48,15 @@ $(function(){
           return false;
         });
       }); 
+     
 });
+
+(function ($) {
+  $(document).ready(function() {
+
+
+     let headerHeight = $('.header').height();
+     $('.slider__image').css('Height', calc('100vh + -${headerHeight}px'));
+
+  });
+})(jQuery);
