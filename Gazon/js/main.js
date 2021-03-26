@@ -51,7 +51,7 @@ $(function(){
      
 });
 
-(function ($) {
+/* (function ($) {
   $(document).ready(function() {
 
 
@@ -60,4 +60,4 @@ $(function(){
      
 
   });
-})(jQuery);
+})(jQuery); */

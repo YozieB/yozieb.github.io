@@ -75,15 +75,9 @@
 .slider {
     margin-bottom: 28px;
     &__image {
-        height: calc(100vh + -200px);
         img{
             width: 100%;
         }
-        /* img {
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
-        } */
     }
 }
 
