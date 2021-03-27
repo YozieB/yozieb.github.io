@@ -162,9 +162,47 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 .header__bottom-menu ul {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+}
+.header__bottom-menu ul li:hover ul {
+    display: block;
+    height: auto;
+    font-size: 15px;
+    display: block;
+}
+.header__bottom-menu ul li:hover li {
+    display: block;
+}
+.header__bottom-menu ul ul {
+    height: 0;
+    display: block;
+    font-size: 0;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    width: 200px;
+    background-color: rgba(219, 235, 212, 0.9);
+    border-radius: 8px;
+    color: black;
+    position: absolute;
+    z-index: 2;
+}
+.header__bottom-menu ul ul li {
+    padding-bottom: 14px;
+    padding-top: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0;
+    display: none;
+    font-weight: 300;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 252, 147, 0.178);
+}
+.header__bottom-menu ul ul li:last-child {
+    border: none;
 }
 .header__bottom-menu li {
     display: inline-block;
@@ -419,7 +457,6 @@ body {
     height: 210px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -747,6 +784,67 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+#modal {
+    display: none;
+}
+#secondmodal {
+    display: none;
+}
+.fancybox-content {
+    background-color: #dbebd4;
+    text-align: center;
+    font-family: "Graphik", sans-serif;
+    border-radius: 10px;
+}
+.fancybox-content .popup__btn {
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+.fancybox-content .popup__btn a {
+    width: 200px;
+}
+.fancybox-content .popup__btn-send {
+    margin: 0 auto;
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+    background-color: #5c5555a9;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.fancybox-content .popup__btn-send:hover {
+    background-color: #00602b;
+    color: #fff;
+    border-color: #00602b;
+}
+.fancybox-content .popup__text {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.fancybox-content .popup__title {
+    text-transform: uppercase;
+    max-width: 350px;
+    font-family: "Graphik", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.fancybox-content form input {
+    margin-bottom: 10px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    outline: none;
+    color: gray;
 }
 .card__inner {
     display: -webkit-box;

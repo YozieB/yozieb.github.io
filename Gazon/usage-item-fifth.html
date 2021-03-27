@@ -42,8 +42,23 @@
                     <ul>
                         <li><a href="index.html">Главная</a></li>
                         <li><a href="index.html#cena">Цена</a></li>
-                        <li><a href="usage.html">Применение</a></li>
-                        <li><a href="info.html">Информация</a></li>
+                        <li><a href="usage.html">Применение</a>
+                        
+                            <ul>
+                                <li><a href="usage-item-fifth.html">Экопарковка</a></li>
+                                <li><a href="usage-item-fourth.html">Садовые дорожки</a></li>
+                                <li><a href="usage-item-second.html">Дороги и проезды</a></li>
+                                <li><a href="usage-item-one.html">Для дома и дачи</a></li>
+                                <li><a href="usage-item-third.html">Лёгкий фундамент</a></li>
+                            </ul>
+                        
+                        </li>
+                        <li><a href="info.html">Информация</a>
+                            <ul>
+                                <li><a href="info.html#prepare">Подготовка основания</a></li>
+                                <li><a href="info.html#ukladka">Руководство по укладке</a></li>
+                                
+                            </ul></li>
                         <li><a href="delivery.html">Доставка</a></li>
                         <li><a href="contact.html">Контакты</a></li>
                     </ul>
@@ -149,7 +164,7 @@
                     </div>
                     <div class="product__item-btn">
                         <a href="card.html">Подробнее</a>
-                        <a href="card.html" class="product__item-btn-buy">Купить</a>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="product__item-btn-buy">Купить</a>
                     </div>
                 </div>
                 <div class="product__item product__item-second">
@@ -168,12 +183,42 @@
                     </div>
                     <div class="product__item-btn">
                         <a href="secondcard.html">Подробнее</a>
-                        <a href="secondcard.html" class="product__item-btn-buy">Купить</a>
+                        <a data-fancybox data-src="#secondmodal" href="javascript:;" class="product__item-btn-buy">Купить</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <div id="modal">
+        <div class="product__item-btn popup__btn">
+            <a href="card.html">Купить сейчас</a>
+        </div>
+        <div class="popup__text"><em>или</em></div>
+        <form action="#">
+            <div class="popup__title">Укажите ваш номер и мы вам перезвоним в ближайшее время</div>
+            <label for="#">
+                <input type="number" required placeholder="+7 777 777 7777">
+            </label>
+            <button class="product__item-btn popup__btn-send" type="submit">
+               Отправить
+            </button>
+        </form>
+    </div>
+    <div id="secondmodal">
+        <div class="product__item-btn popup__btn">
+            <a href="secondcard.html">Купить сейчас</a>
+        </div>
+        <div class="popup__text"><em>или</em></div>
+        <form action="#">
+            <div class="popup__title">Укажите ваш номер и мы вам перезвоним в ближайшее время</div>
+            <label for="#">
+                <input type="number" required placeholder="+7 777 777 7777">
+            </label>
+            <button class="product__item-btn popup__btn-send" type="submit">
+               Отправить
+            </button>
+        </form>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -221,6 +266,7 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
