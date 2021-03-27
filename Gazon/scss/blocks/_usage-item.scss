@@ -71,8 +71,10 @@
 }
 .usage__item-littleimg{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    img:nth-child(1){
+        margin-right: 20px;
+    }
 }
 
 //ITEM-4

@@ -13,6 +13,11 @@
             width: 100%;
         }
     }
+    .usage__item-littleimg{
+        img:nth-child(1){
+            margin-right: 0px;
+        }
+    }
     .product {
         padding-top: 20px;
     }

@@ -5,6 +5,7 @@ $(function(){
         slidesToScroll: 1,
         autoplay: true,
         arrows: false,
+        dots: true,
       });
       $('.card__item-slider').slick({
         slidesToShow: 1,

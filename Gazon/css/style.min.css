@@ -183,8 +183,39 @@ body {
 .slider {
     margin-bottom: 28px;
 }
+.slider__inner {
+    position: relative;
+}
 .slider__image img {
     width: 100%;
+}
+.slider .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 150px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.slider .slick-dots .slick-active button {
+    background-color: #50af00;
+}
+.slider .slick-dots button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #dbebd4;
 }
 .abilities {
     font-weight: 500;
@@ -368,6 +399,7 @@ body {
     padding-left: 12px;
     padding-right: 12px;
     margin-left: 261px;
+    margin-bottom: 7px;
 }
 .product__item-size {
     margin-left: 250px;
@@ -865,7 +897,7 @@ body {
     justify-content: space-between;
     font-size: 10px;
     margin-left: 76px;
-    margin-right: 36px;
+    margin-right: 45px;
     margin-bottom: 5px;
 }
 .card__item-btn {
@@ -940,6 +972,7 @@ body {
     height: 20px;
     cursor: pointer;
     text-align: center;
+    font-size: 18px;
 }
 .amount .quantity {
     margin: 0 10px;
@@ -1130,16 +1163,15 @@ body {
 .contact__item-list {
     font-size: 12px;
 }
-.contact__item-list li:nth-child(5) {
+.contact__item-list li:nth-child(4) {
     margin-top: 15px;
 }
-.contact__item-list li:nth-child(6) {
+.contact__item-list li:nth-child(5) {
     margin-bottom: 15px;
 }
 .contact__item-list li:nth-child(1),
 .contact__item-list li:nth-child(2),
-.contact__item-list li:nth-child(3),
-.contact__item-list li:nth-child(4) {
+.contact__item-list li:nth-child(3) {
     font-size: 20px;
 }
 .contact__map {
@@ -1287,11 +1319,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+.usage__item-littleimg img:nth-child(1) {
+    margin-right: 20px;
 }
 .usage__title-item-4 {
     margin-bottom: 55px;
@@ -1846,7 +1879,7 @@ body {
         margin: 0 auto;
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .header__bottom-menu {
         width: 90%;
         overflow-x: scroll;
@@ -2421,6 +2454,9 @@ body {
     }
     .usage__img-2 img {
         width: 100%;
+    }
+    .usage__item-littleimg img:nth-child(1) {
+        margin-right: 0px;
     }
     .product {
         padding-top: 20px;
