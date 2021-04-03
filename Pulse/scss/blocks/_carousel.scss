@@ -1,0 +1,107 @@
+
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        max-width: 750px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        left: -66px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        font-size: 0;
+        background-image: url(../../images/prev-arrow.png);
+        width: 31px;
+        height: 50px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+    }
+    .slick-next {
+        right: -66px;
+        background-image: url(../../images/next-arrow.png);
+        left: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel {
+        .slick-dots {
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+            width: 80px;
+            margin: 20px auto 0;
+            #slick-slide-control01 {
+                border-radius: 50%;
+                background-color: transparent;
+                border: 3px solid $red;
+                outline: none;
+                width: 25px;
+                height: 25px;
+                font-size: 0;
+            }
+            #slick-slide-control00 {
+                border-radius: 50%;
+                background-color: transparent;
+                border: 3px solid $red;
+                outline: none;
+                width: 25px;
+                height: 25px;
+                font-size: 0;
+            }
+            .slick-active {
+                background-color: $red;
+                border-radius: 50%;
+                height: 25px;
+                width: 25px;
+                font-size: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 777px) {
+    .carousel {
+        padding-top: 60px;
+        &__inner {
+            img {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 447px) {
+    .carousel {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}
+
+@media (max-width: 360px) {
+    .carousel {
+        .slick-dots {
+            #slick-slide-control01 {
+               width: 20px;
+               height: 20px;
+            }
+            #slick-slide-control00 {
+                width: 20px;
+                height: 20px;
+            }
+            .slick-active {
+               width: 20px;
+               height: 20px;
+            }
+        }
+    }
+}

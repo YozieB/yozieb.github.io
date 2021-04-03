@@ -1,0 +1,62 @@
+@import "vars";
+@import "global";
+@import "fonts";
+@import "blocks/forms";
+@import "blocks/buttons";
+
+//animations
+
+@import "animations";
+
+//PROMO
+
+@import "blocks/promo";
+@import "blocks/header";
+
+
+
+// ADVANTAGES
+
+@import "blocks/advantages";
+
+//CONSULTATION
+
+@import "blocks/consultation";
+
+
+// SLIDER
+
+@import "blocks/carousel";
+
+//CATALOG
+
+@import "blocks/catalog";
+
+//REVIEWS
+
+@import "blocks/reviews";
+
+//FOOTER
+
+@import "blocks/footer";
+
+//POPUP
+
+@import "blocks/modal";
+
+
+//VALIDTAION
+
+.error{
+    text-decoration: underline;
+    text-align: center;
+    margin: 10px 0;
+}
+input.error{
+    border: 1px solid red;
+}
+
+//pageup
+
+@import "blocks/pageup";
+

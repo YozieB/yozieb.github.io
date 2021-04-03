@@ -1,0 +1,25 @@
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+
+}
+body{
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+.container{
+    max-width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}

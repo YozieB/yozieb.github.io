@@ -1,0 +1,33 @@
+
+.feed__form{
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    input{
+        background-color: #fff;
+        min-height: 50px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #4b4b4b;
+        font-weight: 300;
+        font-size: 14px;
+        &:nth-child(3){
+            margin-bottom: 20px;
+        }
+    }
+    &-mt25{
+        margin-top: 25px;
+    }
+}
+
+
+@media(max-width: 810px){
+    .feed__form{
+        margin: 36px auto 0;
+    }
+}

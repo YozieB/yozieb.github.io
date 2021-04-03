@@ -1,0 +1,46 @@
+
+.button{
+    padding: 10px 20px;
+    background-color: $red;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    &-main{
+        padding: 18px 40px;
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+    &-submit{
+        width: 100%;
+        padding: 20px 40px;
+        border-radius: 5px;
+        background-color: $red;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    &-mini{
+        padding: 14px 35px;
+        line-height: 14px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 500px){
+    .button-submit{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 380px){
+    .button-main{
+        margin-top: 25px;
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+}
+
