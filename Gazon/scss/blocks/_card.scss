@@ -13,6 +13,11 @@
             .slick-slider {
                 position: relative;
             }
+            .slick-list{
+                padding: 0 50px;
+                max-width: 620px;
+                width: 100%;
+            }
         }
         &-title {
             font-weight: 500;
@@ -74,6 +79,7 @@
 }
 .slick__wrapper {
     max-width: 619px;
+    margin-right: 30px;
     height: 761px !important;
 }
 
@@ -93,11 +99,11 @@
 }
 .slick-next {
     background-image: url(../images/slider-card-1/arrow-next.svg);
-    right: -5px;
+    right: -25px;
 }
 .slick-prev {
     background-image: url(../images/slider-card-1/arrow-prev.svg);
-    left: -5px;
+    left: -25px;
 }
 
 //FORM

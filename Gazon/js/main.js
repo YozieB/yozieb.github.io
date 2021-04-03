@@ -10,7 +10,7 @@ $(function(){
       $('.card__item-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: false,
         asNavFor: '.card__item-thumbs'
       });
@@ -18,7 +18,8 @@ $(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.card__item-slider',
-        dots: true,
+        dots: false,
+        arrows: true,
         centerMode: true,
         focusOnSelect: true,
         responsive: [
