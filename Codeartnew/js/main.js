@@ -1,5 +1,5 @@
 $(function () {
-    new WOW().init();
+    
     $('.mainscreen__slide').slick({
         infinite: true,
         slidesToShow: 1,
@@ -9,19 +9,18 @@ $(function () {
         dots: true,
         arrows: true,
       });
-      $(".works__descr").hover(function () {
-        $(this).addClass('animate__animated wow animate__flipInY');
-    });
-    
-    $(".works__descr").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-        $(this).removeClass('animate__animated wow animate__flipInY');
-    });
 });
-
-
-
+new WOW().init();
 $('.hamburger').click(function () {
     $(this).toggleClass("hamburger_active");
 });
 
 
+
+$(".works__descr").hover(function () {
+    $(this).addClass('animate__animated wow animate__flipInY');
+});
+
+$(".works__descr").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
+    $(this).removeClass('animate__animated wow animate__flipInY');
+});
