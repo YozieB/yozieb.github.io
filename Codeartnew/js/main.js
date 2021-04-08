@@ -12,3 +12,4 @@ $(function () {
 $('.hamburger').click(function () {
     $(this).toggleClass("hamburger_active");
 });
+new WOW().init();
