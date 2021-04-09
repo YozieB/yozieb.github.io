@@ -9,6 +9,13 @@ $(function () {
         dots: true,
         arrows: true,
       });
+       $('.services__inner').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+      });
 });
 new WOW().init();
 $('.hamburger').click(function () {
