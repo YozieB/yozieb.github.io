@@ -1,14 +1,16 @@
 $(function () {
-
     $('.mainscreen__slide').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
-        dots: true,
-        arrows: true,
+ /*         autoplay: true,
+        autoplaySpeed: 2000,  */
+        dots: false,
+        arrows: false,
     });
+    
     $('.services__inner').slick({
         infinite: true,
         slidesToShow: 1,
