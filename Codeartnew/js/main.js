@@ -21,7 +21,7 @@ $(function () {
             $(this).slick('slickPrev');
         }
     }));
-    
+
     $('.services__inner').slick({
         infinite: true,
         slidesToShow: 1,
@@ -51,9 +51,12 @@ $(function () {
 });
 new WOW().init();
 $('.hamburger').click(function () {
-    $(this).toggleClass("hamburger_active");
+/*     $(this).toggleClass("hamburger_active"); */
+    $('.topoverlay').fadeIn();
 });
-
+$('.topoverlay__close').click(function (){
+    $('.topoverlay').fadeOut();
+});
 
 
 $(".works__descr").hover(function () {
