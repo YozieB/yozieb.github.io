@@ -5,11 +5,22 @@ $(function () {
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
-         autoplay: true,
-        autoplaySpeed: 2000, 
+        autoplay: true,
+        autoplaySpeed: 2000,
         dots: false,
+        swipeToSlide: true,
         arrows: false,
     });
+
+    //scroll mousewheel
+    $('.mainscreen__slide').on('wheel', (function (e) {
+        e.preventDefault();
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickNext');
+        } else {
+            $(this).slick('slickPrev');
+        }
+    }));
     
     $('.services__inner').slick({
         infinite: true,
