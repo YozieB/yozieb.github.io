@@ -36,7 +36,7 @@
                 </div>
                 <div class="header__item-right">
                     <a href="tel:+380995582290" class="header__tel">+38 (099) 55 822 90</a>
-                    <a href="#" class="header__btn">Сделать заказ</a>
+                    <a href="#" class="header__btn" data-modal="order">Сделать заказ</a>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
                             </a>
                         </div>
                         <p class="mainscreen__text">Ответим на все Ваши вопросы в телефонном режиме</p>
-                        <a href="#" class="mainscreen__btn header__btn">Заказать звонок</a>
+                        <a href="#" class="mainscreen__btn header__btn" data-modal="order">Заказать звонок</a>
                     </div>
                 </div>
             </div>
@@ -724,7 +724,7 @@
                 </div>
             </div>
             <div class="progress__btn animate__animated wow animate__fadeInUp" data-wow-delay="3.5s">
-                <a href="#" class="mainscreen__btn header__btn">Заказать звонок</a>
+                <a href="#" class="mainscreen__btn header__btn" data-modal="order">Заказать звонок</a>
             </div>
         </div>
     </section>
@@ -964,16 +964,20 @@
         </div>
     </footer>
 
+    <!-- Header overlay -->
+
     <div class="topoverlay">
         <div class="container">
             <div class="topoverlay__wrapper">
                 <div class="topoverlay__inner">
                     <div class="topoverlay__item">
                         <div class="topoverlay__header">
-                            <div class="topoverlay__close animate__animated wow animate__rotateIn" data-wow-duration=".5s">
+                            <div class="topoverlay__close animate__animated wow animate__rotateIn"
+                                data-wow-duration=".5s">
                                 <img src="images/main/topoverlay-close.svg" alt="">
                             </div>
-                            <a class="topoverlay__logo animate__animated wow animate__fadeInDown" data-wow-delay=".5s" href="#"><img src="images/main/topoverlay-logo.svg" alt=""></a>
+                            <a class="topoverlay__logo animate__animated wow animate__fadeInDown" data-wow-delay=".5s"
+                                href="#"><img src="images/main/topoverlay-logo.svg" alt=""></a>
                         </div>
                         <div class="topoverlay__item-inner">
                             <div class="topoverlay__menu animate__animated wow animate__fadeIn" data-wow-delay=".8s">
@@ -983,7 +987,7 @@
                                 <div class="topoverlay__title"><a href="#">О нас</a></div>
                                 <div class="topoverlay__title"><a href="#">Контакты</a></div>
                             </div>
-                            <div class="topoverlay__menu animate__animated wow animate__fadeIn" data-wow-delay=".6s" >
+                            <div class="topoverlay__menu animate__animated wow animate__fadeIn" data-wow-delay=".6s">
                                 <div class="topoverlay__title topoverlay__title-menu"><a href="#">Услуги</a></div>
                                 <ul class="topoverlay__menu-list">
                                     <li><a href="#">Разработка сайта</a></li>
@@ -995,7 +999,8 @@
                                     <li><a href="#">SEO оптимизация</a></li>
                                 </ul>
                             </div>
-                            <div class="footer__menu topoverlay__links animate__animated wow animate__fadeIn" data-wow-delay=".4s">
+                            <div class="footer__menu topoverlay__links animate__animated wow animate__fadeIn"
+                                data-wow-delay=".4s">
                                 <div class="footer__menu-title topoverlay__title-menu">Контакты</div>
                                 <ul class="footer__menu-list-contacts topoverlay__contacts">
                                     <li><a href="#">developer@codart.pro</a></li>
@@ -1043,21 +1048,57 @@
                             </div>
                         </div>
                     </div>
-                    <img class="topoverlay__biglogo animate__animated wow animate__pulse" data-wow-iteration="infinite" data-wow-delay="1.5s" data-wow-duration="4s" src="images/main/topoverlay-biglogo.svg" alt="">
+                    <img class="topoverlay__biglogo animate__animated wow animate__pulse" data-wow-iteration="infinite"
+                        data-wow-delay="1.5s" data-wow-duration="4s" src="images/main/topoverlay-biglogo.svg" alt="">
                 </div>
                 <div class="topoverlay__order">
-                    <a href="#" class="topoverlay__order-item topoverlay__order-phone animate__animated wow animate__fadeInDown">
+                    <a href="#" data-modal="order"
+                        class="topoverlay__order-item topoverlay__order-phone animate__animated wow animate__fadeInDown">
                         <img src="images/main/topoverlay-phone.svg" alt="">
                         <div class="topoverlay__order-title topoverlay__order-phonetitle">
                             Заказать звонок
                         </div>
                     </a>
-                    <a href="#" class="topoverlay__order-item topoverlay__order-manage animate__animated wow animate__fadeInUp">
+                    <a href="#"
+                        class="topoverlay__order-item topoverlay__order-manage animate__animated wow animate__fadeInUp">
                         <div class="topoverlay__order-title">
                             Сделать заказ
                         </div>
                         <img src="images/main/topoverlay-manage.svg" alt="">
                     </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Pop up/Brief -->
+
+    <div class="popup">
+        <div class="container">
+            <div class="order">
+                <a class="order__close">
+                    <img src="images/main/topoverlay-close.svg" alt="">
+                </a>
+                <div class="order__title services__title">
+                    Контакты и заявка
+                </div>
+                <div class="order__inner">
+                    <div class="order__info">
+                        <div class="order__info-text">
+                            Давайте сотрудничать! Вместе мы сможем реализовать замечательные продукты. Осталось только созвониться.
+                        </div>
+                        <div class="order__info-subtext">
+                            СОЗДАЕМ ПРОДУКТЫ, КОТОРЫЕ ПРИНОСЯТ ПОЛЬЗУ, ВАШЕМУ БИЗНЕСУ
+                        </div>
+                    </div>
+                    <div class="order__form">
+                        <form action="#">
+                            <input type="text" required placeholder="Ваше Имя">
+                            <input type="email" required placeholder="Ваш email">
+                            <input type="text" required placeholder="Какая задача вас интересует">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

@@ -49,15 +49,27 @@ $(function () {
 
 
 });
+
 new WOW().init();
+
+//modal
+
+$('[data-modal=order]').click(function (){
+    $('.popup').fadeIn();
+})
+$('.order__close').click(function (){
+    $('.popup').fadeOut();
+})
+//Header menu
+
 $('.hamburger').click(function () {
-/*     $(this).toggleClass("hamburger_active"); */
     $('.topoverlay').fadeIn();
 });
 $('.topoverlay__close').click(function (){
     $('.topoverlay').fadeOut();
 });
 
+//animation of works
 
 $(".works__descr").hover(function () {
     $(this).addClass('animate__animated wow animate__flipInY');
@@ -66,3 +78,5 @@ $(".works__descr").hover(function () {
 $(".works__descr").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
     $(this).removeClass('animate__animated wow animate__flipInY');
 });
+
+
