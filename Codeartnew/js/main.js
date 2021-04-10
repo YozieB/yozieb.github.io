@@ -5,8 +5,8 @@ $(function () {
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
- /*         autoplay: true,
-        autoplaySpeed: 2000,  */
+         autoplay: true,
+        autoplaySpeed: 2000, 
         dots: false,
         arrows: false,
     });
