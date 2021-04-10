@@ -1,5 +1,5 @@
 $(function () {
-    
+
     $('.mainscreen__slide').slick({
         infinite: true,
         slidesToShow: 1,
@@ -8,14 +8,33 @@ $(function () {
         verticalSwiping: true,
         dots: true,
         arrows: true,
-      });
-       $('.services__inner').slick({
+    });
+    $('.services__inner').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
         arrows: true,
-      });
+    });
+
+    $('.reviews__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        adaptiveHeight: true,
+        asNavFor: '.reviews__nav'
+    });
+    $('.reviews__nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.reviews__slider',
+        focusOnSelect: true
+    });
+
+
 });
 new WOW().init();
 $('.hamburger').click(function () {
