@@ -5,7 +5,7 @@ $(function () {
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         dots: false,
         swipeToSlide: true,
@@ -53,7 +53,7 @@ $(function () {
 
 new WOW(
     {
-        mobile:       false,
+        mobile: false,
       }
 ).init();
 
