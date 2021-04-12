@@ -49,40 +49,45 @@ $(function () {
 
     
 
-});
+    new WOW(
+        {
+            mobile: false,
+          }
+    ).init();
+    
+    //modal
+    
+    $('[data-modal=order]').click(function (){
+        $('.popup').fadeIn();
+    })
+    $('.order__close').click(function (){
+        $('.popup').fadeOut();
+    })
+    
+    //Header menu
+    
+    $('.hamburger').click(function () {
+        $('.topoverlay').fadeIn();
+    });
+    $('.topoverlay__close').click(function (){
+        $('.topoverlay').fadeOut();
+    });
+    
+    //animation of works
+    
+    $('.works__descr').hover(function () {
+        $(this).addClass('animate__animated wow animate__flipInY');
+    });
+    
+    $('.works__descr').bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
+        $(this).removeClass('animate__animated wow animate__flipInY');
+    });
+    
+    //btn of switch themes
+    $('.theme').click(function(){
+        $('body').toggleClass('body__dark');
+    });
 
-new WOW(
-    {
-        mobile: false,
-      }
-).init();
-
-//modal
-
-$('[data-modal=order]').click(function (){
-    $('.popup').fadeIn();
-})
-$('.order__close').click(function (){
-    $('.popup').fadeOut();
-})
-
-//Header menu
-
-$('.hamburger').click(function () {
-    $('.topoverlay').fadeIn();
-});
-$('.topoverlay__close').click(function (){
-    $('.topoverlay').fadeOut();
-});
-
-//animation of works
-
-$(".works__descr").hover(function () {
-    $(this).addClass('animate__animated wow animate__flipInY');
-});
-
-$(".works__descr").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-    $(this).removeClass('animate__animated wow animate__flipInY');
 });
 
 
