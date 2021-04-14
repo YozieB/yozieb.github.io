@@ -111,7 +111,7 @@ $(function () {
 		$('[data-field="target-color"]').html($(this).val().length);
 	});
 
-    //input range fix for chrome
+    //input range fix for chrome - когда фикс активируешь, то перестает работать скрипт на отображение денег 
 
 /*     document.getElementById("rangeInput").oninput = function() {
         var value = (this.value-this.min)/(this.max-this.min)*100
