@@ -109,6 +109,9 @@ $(function () {
     $(document).on('input', '[data-field="color"]', function () {
 		$('[data-field="target-color"]').html($(this).val().length);
 	});
+  $(document).on('input', '[data-field="goal"]', function () {
+		$('[data-field="target-goal"]').html($(this).val().length);
+	});
 
     //input range fix for chrome - когда фикс активируешь, то перестает работать скрипт на отображение денег 
 
