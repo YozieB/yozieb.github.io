@@ -89,7 +89,6 @@ $(function () {
     });
 
 
-
     //Counting input symbols
 
 	$(document).on('input', '[data-field="sphere"]', function () {
