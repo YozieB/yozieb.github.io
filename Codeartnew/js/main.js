@@ -112,6 +112,42 @@ $(function () {
   $(document).on('input', '[data-field="goal"]', function () {
 		$('[data-field="target-goal"]').html($(this).val().length);
 	});
+  $(document).on('input', '[data-field="office"]', function () {
+		$('[data-field="target-office"]').html($(this).val().length);
+	});
+  $(document).on('input', '[data-field="business"]', function () {
+		$('[data-field="target-business"]').html($(this).val().length);
+	});
+  $(document).on('input', '[data-field="business-1"]', function () {
+		$('[data-field="target-business-1"]').html($(this).val().length);
+	});
+  $(document).on('input', '[data-field="business-2"]', function () {
+		$('[data-field="target-business-2"]').html($(this).val().length);
+	});
+  $(document).on('input', '[data-field="business-3"]', function () {
+		$('[data-field="target-business-3"]').html($(this).val().length);
+	});
+  $(document).on('input', '[data-field="business-4"]', function () {
+		$('[data-field="target-business-4"]').html($(this).val().length);
+	});
+  $(document).on('input', '[data-field="project-1"]', function () {
+		$('[data-field="target-project-1"]').html($(this).val().length);
+	});
+  $(document).on('input', '[data-field="project-2"]', function () {
+		$('[data-field="target-project-2"]').html($(this).val().length);
+	});
+  $(document).on('input', '[data-field="project-3"]', function () {
+		$('[data-field="target-project-3"]').html($(this).val().length);
+	});
+  $(document).on('input', '[data-field="project"]', function () {
+		$('[data-field="target-project"]').html($(this).val().length);
+	});
+  $(document).on('input', '[data-field="project-4"]', function () {
+		$('[data-field="target-project-4"]').html($(this).val().length);
+	});
+  $(document).on('input', '[data-field="project-5"]', function () {
+		$('[data-field="target-project-5"]').html($(this).val().length);
+	});
 
     //input range fix for chrome - когда фикс активируешь, то перестает работать скрипт на отображение денег 
 

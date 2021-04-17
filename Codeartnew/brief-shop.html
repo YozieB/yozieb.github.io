@@ -23,9 +23,9 @@
                         <span></span>
                     </div>
                     <div class="header__item-hiddencheckbox">
-                    <div class="header__item-checkbox">
-                        <input class="theme" type="checkbox">
-                    </div>
+                        <div class="header__item-checkbox">
+                            <input class="theme" type="checkbox">
+                        </div>
                     </div>
                     <a href="#" class="header__logo">
                         <img src="images/main/logo.svg" alt="">
@@ -57,14 +57,14 @@
     </header>
     <section class="brief">
         <div class="container">
-            <div class="brief__title">Бриф на продвижение</div>
+            <div class="brief__title">Бриф на разработку</div>
             <select class="brief__select">
-                <option>Продвижение в соц.сетях</option>
                 <option>Интернет-магазина</option>
                 <option>Мобильного приложения</option>
                 <option>Дизайна</option>
                 <option>Одностраничника</option>
                 <option>Интернет-проекта</option>
+                <option>Продвижение в соц.сетях</option>
                 <option>Интернет-маркетинг</option>
             </select>
             <div class="brief__subtitle">Пожалуйста, ответьте на вопросы анкеты</div>
@@ -81,6 +81,7 @@
                     <label>Ваш E-mail<sup>*</sup></label>
                     <input required type="email" placeholder="example@mail.com">
                 </div>
+                <div class="brief__subtitle">1. Информация о компании</div>
                 <div class="brief__line">
                     <label>Название компании</label>
                     <input required type="text" placeholder="Gibba">
@@ -99,94 +100,381 @@
                         maxlength="40">
                 </div>
                 <div class="brief__line">
-                    <label>Сайт</label>
-                    <input type="text" placeholder="gibba.com">
-                </div>
-                <div class="brief__line">
                     <label class="brief__count">
                         <div class="brief__count-name">
-                            Позиционирование и ценовой сегмент
-                        </div>
-                        <div class="brief__count-number">
-                            <div class="brief__count-changing" data-field="target-descr">0</div>
-                            <span>/340</span>
-                        </div>
-                    </label>
-                    <textarea placeholder="" data-field="descr"
-                        maxlength="340"></textarea>
-                </div>
-                <div class="brief__line">
-                    <label class="brief__count">
-                        <div class="brief__count-name">
-                            Цель продвижения в социальных сетях
+                            Вы знаете ваших конкурентов в сети? Если да, дайте на них ссылки
                         </div>
                         <div class="brief__count-number">
                             <div class="brief__count-changing" data-field="target-enemy">0</div>
-                            <span>/140</span>
+                            <span>/340</span>
                         </div>
                     </label>
-                    <input type="text" placeholder=""
-                        data-field="enemy" maxlength="140">
+                    <textarea placeholder="" data-field="enemy" maxlength="340"></textarea>
                 </div>
+                <div class="brief__subtitle">2. Деятельность заказчика</div>
                 <div class="brief__line">
                     <label class="brief__count">
                         <div class="brief__count-name">
-                            В каких социальных сетях необходимо продвижение?
+                            Продукция, услуги
                         </div>
                         <div class="brief__count-number">
                             <div class="brief__count-changing" data-field="target-like">0</div>
                             <span>/140</span>
                         </div>
                     </label>
-                    <input type="text"
-                        placeholder="Одноклассники, Вконтакте..."
-                        data-field="like" maxlength="140">
+                    <input type="text" placeholder="" data-field="like" maxlength="140">
                 </div>
                 <div class="brief__line">
                     <label class="brief__count">
                         <div class="brief__count-name">
-                            Представительства в социальных сетях
+                            Кто является целевой аудиторией вашего продукта / услуги?
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-descr">0</div>
+                            <span>/340</span>
+                        </div>
+                    </label>
+                    <textarea
+                        placeholder="Какой возраст, пол, должность, интересы? Опишите подробно, кто будет посещать ваш сайт. Разумеется, у вас может быть несколько типов клиентов"
+                        data-field="descr" maxlength="340"></textarea>
+                </div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            Выделите ключевое преимущество продукта / услуги
                         </div>
                         <div class="brief__count-number">
                             <div class="brief__count-changing" data-field="target-unlike">0</div>
-                            <span>/140</span>
+                            <span>/340</span>
                         </div>
                     </label>
-                    <input  type="text"
-                        placeholder=""
-                        data-field="unlike" maxlength="140">
-                </div>
-                <div class="brief__line">
-                    <label>Ориентировочный бюджет на рекламу<sup>*</sup></label>
-                    <output name="amount" id="amount" for="rangeInput">0</output>
-                    <input id="rangeInput" type="range" name="amountRange" min="0" max="100000" value="0"
-                        oninput="amount.value=rangeInput.value" />
+                    <textarea placeholder="" data-field="unlike" maxlength="340"></textarea>
                 </div>
                 <div class="brief__line">
                     <label class="brief__count">
                         <div class="brief__count-name">
-                            Портрет целевой аудитории
+                            С какими проблемами к вам приходит клиент? Что в вашем случае можно назвать "болью" клиента?
                         </div>
                         <div class="brief__count-number">
                             <div class="brief__count-changing" data-field="target-color">0</div>
                             <span>/340</span>
                         </div>
                     </label>
-                    <textarea placeholder="" data-field="color"
-                        maxlength="340"></textarea>
+                    <textarea placeholder="" data-field="color" maxlength="340"></textarea>
                 </div>
                 <div class="brief__line">
                     <label class="brief__count">
                         <div class="brief__count-name">
-                           Ваши конкуренты
+                            На что опирается клиент, сравнивая ваш продукт с продуктом конкурента? Какие критерии
+                            являются основными при принятии решения о покупке?
                         </div>
                         <div class="brief__count-number">
                             <div class="brief__count-changing" data-field="target-goal">0</div>
                             <span>/340</span>
                         </div>
                     </label>
-                    <textarea placeholder="" data-field="goal"
+                    <textarea placeholder="" data-field="goal" maxlength="340"></textarea>
+                </div>
+                <div class="brief__line">
+                    <label>Выберите 5 наиболее распространенных возражения в вашем бизнесе.</label>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Безопасно?</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Есть гарантии?</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Сертификаты, награды и прочие документы?</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Качественно?</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Как выбрать среди большого количества аналогов? Чем вы лучше?</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Насколько это сложно?</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Не завышена ли цена?</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Есть отзывы?</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Сколько людей уже пользуются?</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Насколько известная компания?</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Есть какие-то скидки\акции?</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="information">
+                        <span>Какие сроки?</span>
+                    </div>
+                </div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            Какие решения вы предоставляете клиенту?
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-office">0</div>
+                            <span>/340</span>
+                        </div>
+                    </label>
+                    <textarea placeholder="Полный спектр ваших услуг или продуктовая линейка" data-field="office"
                         maxlength="340"></textarea>
+                </div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            Покажите ваши цифры
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-business">0</div>
+                            <span>/340</span>
+                        </div>
+                    </label>
+                    <textarea
+                        placeholder="Возможно, вы можете похвастаться цифрами? Например: построено 29540 домов, 555125 человек уже пользуются нашим приложением, суммарный опыт сотрудников больше 100 лет."
+                        data-field="business" maxlength="340"></textarea>
+                </div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            У вас есть качественные изображения или видео для сайта?
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-business-1">0</div>
+                            <span>/140</span>
+                        </div>
+                    </label>
+                    <input type="text" placeholder="" data-field="business-1" maxlength="140">
+                </div>
+                <div class="brief__subtitle">3. Портрет интернет-проекта</div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            Какой сайт можно взять за пример полностью или с частью функционала
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-business-2">0</div>
+                            <span>/140</span>
+                        </div>
+                    </label>
+                    <input type="text" placeholder="" data-field="business-2" maxlength="140">
+                </div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            У вас сейчас есть сайт? Что вам не нравится в нынешнем сайте?
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-business-3">0</div>
+                            <span>/140</span>
+                        </div>
+                    </label>
+                    <input type="text" placeholder="" data-field="business-3" maxlength="140">
+                </div>
+                <div class="brief__line">
+                    <label>Ориентировочное количество товаров на новом сайте</label>
+                    <div class="brief__line-wrapper brief__line-bottomwrapper">
+                        <div class="brief__line-check">
+                            <input class="brief__checkbox" type="radio" name="lang" id="brief__checkbox-russian">
+                            <label for="brief__checkbox-russian"></label>
+                            <span>до 1000</span>
+                        </div>
+                        <div class="brief__line-check">
+                            <input class="brief__checkbox" type="radio" name="lang" id="brief__checkbox-translate-full">
+                            <label for="brief__checkbox-translate-full"></label>
+                            <span>до 10000</span>
+                        </div>
+                        <div class="brief__line-check">
+                            <input class="brief__checkbox" type="radio" name="lang" id="brief__checkbox-ukr">
+                            <label for="brief__checkbox-ukr"></label>
+                            <span>до 50000</span>
+                        </div>
+                        <div class="brief__line-check">
+                            <input class="brief__checkbox" type="radio" name="lang" id="brief__checkbox-partly">
+                            <label for="brief__checkbox-partly"></label>
+                            <span>свыше 50000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            На сколько срочен данный проект для вас? Когда дедлайн по запуску ресурса (НЕ путать с
+                            дедлайном по выбору подрядчика)
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-business-4">0</div>
+                            <span>/140</span>
+                        </div>
+                    </label>
+                    <input type="text" placeholder="" data-field="business-4" maxlength="140">
+                </div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            Есть ли у вас особая идея? Возможно, у вас есть сформированное видение будущего сайта?
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-project">0</div>
+                            <span>/340</span>
+                        </div>
+                    </label>
+                    <textarea placeholder="" data-field="project" maxlength="340"></textarea>
+                </div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            Укажите предполагаемые основные разделы вашего будущего сайта (структуру)
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-project-1">0</div>
+                            <span>/340</span>
+                        </div>
+                    </label>
+                    <textarea placeholder="" data-field="project-1" maxlength="340"></textarea>
+                </div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            Есть ли у вас прототип будущего сайта?
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-project-2">0</div>
+                            <span>/140</span>
+                        </div>
+                    </label>
+                    <input type="text" placeholder="" data-field="project-2" maxlength="140">
+                </div>
+                <div class="brief__subtitle">4. Дизайн</div>
+                <div class="brief__line">
+                    <label>Вид дизайна</label>
+                    <div class="brief__line-wrapper">
+                        <div class="brief__line-check">
+                            <input class="brief__checkbox" type="radio" name="length" id="brief__checkbox-month">
+                            <label for="brief__checkbox-month"></label>
+                            <span>Необходим уникальный дизайн сайта</span>
+                        </div>
+                        <div class="brief__line-check">
+                            <input class="brief__checkbox" type="radio" name="length" id="brief__checkbox-2month">
+                            <label for="brief__checkbox-2month"></label>
+                            <span>Можно рассматривать шаблоны HTML для сокращения стоимости и сроков разработки</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            Сайты, которые нравятся
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-project-3">0</div>
+                            <span>/140</span>
+                        </div>
+                    </label>
+                    <input type="text" placeholder="" data-field="project-3" maxlength="140">
+                </div>
+                <div class="brief__subtitle">5. Функциональность сайта</div>
+                <div class="brief__line">
+                    <label class="brief__count">
+                        <div class="brief__count-name">
+                            Какой сайт можно взять за пример полностью или с частью функционала. Опишите отличия и
+                            разницу.
+                        </div>
+                        <div class="brief__count-number">
+                            <div class="brief__count-changing" data-field="target-project-5">0</div>
+                            <span>/340</span>
+                        </div>
+                    </label>
+                    <textarea placeholder="" data-field="project-5" maxlength="340"></textarea>
+                </div>
+                <div class="brief__line">
+                    <label>Что из этого необходимо?</label>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Рекомендуемые товары / товары могут идти в комплекте</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Изменение цен от курса</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>GeoIP (определение местоположения посетителя)</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Размещение файлов для скачивания (PDF)</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Регистрация через социальные сети</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>
+                            Возможность выбора различных способов и условий доставки товара, расчет стоимости доставки,
+                            API Новой Почты
+                        </span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Мультиязычность (несколько языковых версий)</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Сравнение товаров</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Старая - Новая цена (возможность создавать на сайте 2 цены: старая цена (перечеркнутая) и новая актуальная цена)</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Система скидок, бонусная система, Дисконтные коды</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Интеграции (1С или что-то подобное)</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Импорт / экспорт товаров из файла</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Перенос контента со старого сайта на новый</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Сохранение SEO позиций и трафика домена</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Акции</span>
+                    </div>
+                    <div class="brief__line-list">
+                        <input class="brief__list" type="checkbox" name="factors">
+                        <span>Желаемые товары (Wishlist)</span>
+                    </div>
                 </div>
                 <div class="brief__line">
                     <label class="brief__count">
@@ -373,9 +661,9 @@
         </div>
     </footer>
 
-     <!-- Header overlay -->
+    <!-- Header overlay -->
 
-     <div class="topoverlay">
+    <div class="topoverlay">
         <div class="container">
             <div class="topoverlay__wrapper">
                 <div class="topoverlay__inner">
@@ -598,7 +886,8 @@
                     <div class="order__descr">
                         <span>Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных и
                             соглашаетесь c политикой конфиденциальности.</span>
-                        <a href="brief.html" target="_blank" class="order__btn order__btn-brief">Бриф для заполнения </a>
+                        <a href="brief.html" target="_blank" class="order__btn order__btn-brief">Бриф для заполнения
+                        </a>
                     </div>
                 </div>
             </div>
