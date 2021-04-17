@@ -1,0 +1,183 @@
+.body__dark {
+    background-color: $maincolor;
+    color: white;
+    transition: all .3s;
+    .landings__item-subtitle{
+        color: rgba(255, 255, 255, .5);
+    }
+    .header{
+        &__page{
+            background: linear-gradient(209.83deg, #C4C4C4 -1.81%, #544352 -1.8%, #35344D 74.21%);
+            .header__btn{
+                background: #9468B4;
+                border-color: #9468B4 !important;
+            }
+        }
+        &__logo {
+            img {
+                &:nth-child(1) {
+                    display: none;
+                }
+                &:nth-child(2) {
+                    transform: translateY(0);
+                    position: relative;
+                }
+            }
+        }
+        &__item{
+            &-light{
+                color: #fdea7b !important;
+            }
+            &-checkbox{
+                border-color: #fff !important;
+                color: #fff !important;
+            }
+        }
+        &__tel{
+            color: #fff;
+        }
+        &__btn{
+            color: #fff;
+            border-color: #fff !important;
+        }
+    }
+    .cards__item {
+        background-color: #455b66;
+        transition: all .3s;
+        &:hover {
+            background-color: $violet;
+        }
+    }
+    .hamburger {
+        span {
+            background-color: #fff;
+        }
+    }
+    .popup {
+        input{
+            background-color: $maincolor;
+            color: #fff;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+        .order {
+            background-color: $maincolor;
+            border: 3px solid #EEEEEE;
+            &__links{
+                color: #C894C4;
+            }
+            &__btn{
+                color: #C894C4;
+                &::after{
+                    background-image: url(../images/main/submit-button-dark.svg);
+                }
+            }
+           
+        }
+    }
+    .lite__logos {
+        display: none;
+    }
+    .dark__logos {
+        display: flex;
+    }
+    .works__item-droppro {
+        background-color: white;
+    }
+    .skills {
+        &__table {
+            background-color: rgba(255, 215, 250, 0.4);
+            &-menu {
+                span {
+                    color: rgba(246, 187, 242, 1);
+                }
+            }
+        }
+    }
+    .progress {
+        &__item {
+            background-color: #455b66;
+            &::before {
+                border-left: 75px solid $maincolor;
+            }
+            &::after {
+                border-left: 75px solid #455b66;
+            }
+        }
+    }
+    .reviews {
+        &__slider {
+            &-item {
+                background-color: $maincolor;
+            }
+        }
+        &__nav {
+            .reviews__nav-item {
+                background-color: #455b66;
+            }
+            .slick-current {
+                .reviews__nav-item {
+                    background-color: $maincolor;
+                }
+            }
+        }
+        .slick-active button {
+            background-color: white !important;
+        }
+        .slick-dots {
+            li {
+                button {
+                    background-color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+        .slick-prev,
+        .slick-next {
+            background-image: url(../images/main/arrow-right-slider-bottom-dark.svg);
+        }
+        .slick-next{
+            transform: rotate(180deg);
+        }
+    }
+    .brief__title{
+        color: #fff;
+    }
+    .brief{
+        input{
+            background-color: $maincolor;
+            color: #fff;
+            &::placeholder{
+                color: rgba(255,255,255,.7);
+            }
+        }
+        &__select{
+            color: #fff;
+            background: #696969;
+        }
+        .brief__line-wrapper{
+            label{
+                background-color: #fff;
+            }
+        }
+        .brief__list{
+            background-color: #fff;
+        }
+    }
+    textarea{
+        background-color: $maincolor;
+        color: #fff;
+        &::placeholder{
+            color: rgba(255,255,255,.7);
+        }
+    }
+    input[type='range'] {
+         background-color: #fff;
+       }
+}
+
+.dark__logos {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}

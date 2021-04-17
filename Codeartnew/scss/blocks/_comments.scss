@@ -1,0 +1,120 @@
+.header{
+    &__page{
+        margin-bottom: 140px;
+        .header__top{
+            margin-top: 0;
+            padding-top: 20px;
+        }
+    }
+    &__bottom{
+        margin-top: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 95px;
+        .mainscreen__subtitle{
+            max-width: 600px
+        }
+        .mainscreen__btn{
+            margin-top: 100px;
+            padding: 14px 71px;
+            font-size: 20px;
+        }
+        &-hidden{
+            display: none;
+        }
+        &-title{
+            font-size: 80px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        &-subtitle{
+            font-weight: 400;
+            max-width: 537px;
+            font-size: 32px;
+            line-height: 39px;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+        &-item{
+            &-hidden{
+                display: none;
+            }
+        }
+    }
+}
+
+.comments{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        &-first{
+            margin-bottom: 20px;
+            .comments__item{
+                width: 50%;
+                &-text{
+                    &-hidden{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &-second{
+            margin-bottom: 95px;
+            .comments__item{
+                max-width: 442px;
+                width: 100%;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .comments__item + .comments__item{
+                margin-left: 57px;
+            }
+        }
+        &-third{
+            margin-bottom: 190px;
+            .comments__item{
+                width: 50%;
+                font-size: 24px;
+            }
+            .comments__item + .comments__item{
+                margin-left: 57px;
+            }
+        }
+        &-fourth{
+            margin-bottom: 180px;
+            align-items: center;
+            .comments__item{
+                width: 50%;
+                &-text{
+                    font-size: 20px;
+                    p{
+                        margin-top: 0;
+                        margin-bottom: 32px;
+                    }
+                    span{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    &__item{
+        &-right{
+            order: 1;
+        }
+        &-title{
+            font-size: 62px;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+        &-text{
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &-img{
+            text-align: right;
+        }
+    }
+}
