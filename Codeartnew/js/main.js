@@ -207,7 +207,6 @@ $(function () {
         $('.brief__line-file-label-12').css({'background': '#253238', 'background-image': 'url(../images/main/file-active.svg', 'background-repeat': 'no-repeat', 'background-position': 'center' });
       });
 
-
       //ORDER SVG ANIMS
 });
 
