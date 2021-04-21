@@ -1,0 +1,28 @@
+.redesign{
+    .mobile__item{
+        img{
+            width: 65%;
+        }
+    } 
+    &__header{
+        &-subtitle{
+            font-size: 22px !important;
+        }
+    }
+    &__inner{
+        margin-bottom: 140px;
+    }
+    &__wrapper{
+        align-items: center;
+        margin-bottom: 140px;
+    }
+    &__item{
+        &-title{
+            text-transform: none;
+            font-size: 56px;
+        }
+        &-right{
+            order: -1;
+        }
+    }
+}

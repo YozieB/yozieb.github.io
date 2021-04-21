@@ -1,0 +1,26 @@
+@media (max-width: 765px) {
+    .redesign__item-title {
+        text-align: center;
+        font-size: 30px !important;
+    }
+    .redesign {
+        .mobile {
+            &__item {
+                max-width: 100%;
+                img{
+                    width: 100%;
+                }
+                
+            }
+        }
+        &__wrapper{
+            margin-bottom: 70px;
+        }
+        &__item{
+            text-align: center;
+            &-right{
+                order: 1;
+            }
+        }
+    }
+}

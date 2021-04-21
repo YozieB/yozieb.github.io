@@ -1,0 +1,63 @@
+@media (max-width: 1150px) {
+    .calc__inner-bottom {
+        margin-bottom: 160px !important;
+    }
+}
+@media (max-width: 1100px) {
+    .calc {
+        &__title {
+            &-main {
+                font-size: 57px;
+            }
+        }
+        &__inner {
+            margin-top: 0;
+            &-last {
+                margin-bottom: -240px !important;
+            }
+        }
+    }
+}
+@media (max-width: 1088px) {
+    .calc {
+        .pizza__item-bottom {
+            &:nth-child(3),
+            &:nth-child(4) {
+                transform: translateY(-350px) !important;
+            }
+        }
+    }
+}
+@media (max-width: 739px) {
+    .calc__inner-last {
+        margin-bottom: -1180px !important;
+    }
+    .calc {
+        .pizza {
+            &__inner {
+                &-bottom {
+                    .pizza__item-bottom {
+                        &:nth-child(2) {
+                            transform: translateY(-460px) !important;
+                        }
+                        &:nth-child(3) {
+                            transform: translateY(-850px) !important;
+                        }
+                        &:nth-child(4) {
+                            transform: translateY(-1240px) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 580px) {
+    .calc {
+        &__title {
+            &-main {
+                font-size: 35px !important;
+            }
+        }
+    }
+}

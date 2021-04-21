@@ -1,0 +1,73 @@
+.header {
+    &__site {
+        min-height: 75vh;
+        .pizza__title-sub {
+            display: inline-block;
+            text-align: center;
+            top: -12px;
+            left: -3px;
+        }
+    }
+}
+.home {
+    &__phone {
+        width: 100%;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 160px;
+        margin-top: 260px;
+        align-items: center;
+        &-last{
+            .pizza__item{
+                max-width: auto;
+                width: auto;
+            }
+        }
+        .pizza__phone{
+            border-radius: 0;
+        }
+        .pizza__item-title{
+            font-size: 60px;
+            line-height: 62px;
+        }
+        &-column {
+            flex-direction: column;
+            .pizza__item {
+                margin-left: 0;
+                margin-right: 0;
+                text-align: center;
+            }
+        }
+    }
+    &__item {
+        padding: 0 10px;
+        max-width: 600px;
+        position: relative;
+        width: 100%;
+        .pizza__item-text {
+            span {
+                font-weight: 700;
+            }
+        }
+        .pizza__item-preview {
+            top: 80px;
+            right: -103px;
+        }
+        .pizza__phone {
+            width: 100%;
+        }
+        &-left {
+            order: -1;
+        }
+    }
+}
+
+
+
+.site {
+    &__header {
+        margin-bottom: 0;
+    }
+}

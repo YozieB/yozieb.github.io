@@ -1,0 +1,107 @@
+.landings {
+    padding-bottom: 135px;
+    &__title {
+        text-align: center;
+        margin-bottom: 60px;
+        &-second {
+            text-align: left;
+        }
+        &-right{
+            text-align: right;
+            margin-bottom: 0;
+        }
+    }
+    .comments__inner-fourth {
+        margin-bottom: 0px;
+        .comments__item {
+            width: 52%;
+        }
+    }
+    &__text{
+        &-title{
+            display: block;
+        }
+    }
+    &__list {
+        padding-left: 40px;
+        font-size: 20px;
+        margin-top: 45px;
+        margin-bottom: 65px;
+        &-hidden{
+            display: none;
+        }
+        li + li {
+            margin-top: 25px;
+        }
+        li {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -40px;
+                background-image: url(../images/landings/list.svg);
+                background-repeat: no-repeat;
+                width: 22px;
+                height: 16px;
+                bottom: 20%;
+            }
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        &-last {
+            margin-bottom: 185px;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        margin-bottom: 81px;
+        justify-content: space-between;
+        align-items: center;
+        &-last{
+            margin-top: 120px;
+        }
+        &-item{
+            width: 50%;
+            &-right{
+                order: 1;
+            }
+        }
+        &-title{
+            font-weight: 700;
+            font-size: 54px;
+        }
+    }
+    &__item + .landings__item {
+        margin-left: 60px;
+    }
+    &__item {
+        width: 50%;
+        margin-bottom: 60px;
+        &-title {
+            font-size: 56px;
+            font-weight: 700;
+            padding-left: 25px;
+            margin-bottom: 20px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 5px;
+                height: 100%;
+                background-color: #ba68c8;
+                left: 0;
+            }
+        }
+        &-subtitle {
+            padding-left: 25px;
+            font-size: 22px;
+            color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 25px;
+        }
+        &-text {
+            font-size: 24px;
+        }
+    }
+}

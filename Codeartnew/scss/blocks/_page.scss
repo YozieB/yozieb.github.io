@@ -1,0 +1,233 @@
+.page__title {
+    font-weight: bold;
+    font-size: 62px;
+    margin-bottom: 30px;
+}
+.page__subtitle {
+    font-weight: bold;
+    font-size: 38px;
+}
+.page__text {
+    font-size: 20px;
+    line-height: 29px;
+}
+.page {
+    &__order {
+        padding: 0;
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+        max-width: auto;
+        background-color: transparent;
+        border-radius: 0px;
+        .header__btn {
+            background-color: #9468b4;
+            cursor: pointer;
+        }
+        .order__inner {
+            justify-content: space-between;
+        }
+        .order__form {
+            max-width: 700px;
+            width: 100%;
+        }
+        .order__info {
+            max-width: 700px;
+            width: 100%;
+            margin-right: auto;
+            &-text {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 36px;
+                span{
+                    display: block;
+                }
+            }
+            &-subtext {
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 44px;
+            }
+        }
+    }
+}
+.notebook{
+    display: flex;
+    justify-content: space-between;
+}
+.mobilephone {
+    &__inner {
+        width: 280px;
+       /*  display: none; */
+        text-align: center;
+        position: relative;
+        overflow: auto;
+        background-image: url(../images/megazoo/mobilephone.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 592px;
+    }
+    &__scroll {
+        width: 250px;
+        height: 534px;
+        border-radius: 4%;
+        position: absolute;
+        top: 30px;
+        border: none;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        img {
+            border: none;
+            width: 100%;
+        }
+    }
+}
+.notebook {
+    &__inner {
+        width: 981px;
+        background-image: url(../images/megazoo/notebook.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 592px;
+        text-align: center;
+        position: relative;
+        overflow: auto;
+        img {
+        }
+    }
+    &__scroll {
+        width: 846px;
+        height: 475px;
+        border-radius: 1%;
+        position: absolute;
+        top: 44px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        img {
+            max-width: 846px;
+            width: 100%;
+        }
+    }
+    &__img{
+        position: absolute;
+    }
+}
+@media (max-width: 1600px) {
+    .page {
+        &__order {
+            max-width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 1410px) {
+    .page__order {
+        .order__inner {
+            display: flex !important;
+        }
+        .order__info {
+            &-text {
+                text-align: left !important;
+            }
+            &-subtext {
+                text-align: left !important;
+            }
+        }
+    }
+}
+@media(max-width: 1250px) {
+    .mobilephone__inner {
+        display: none;
+    }
+    .notebook{
+        justify-content: center;
+    }
+}
+@media (max-width: 1120px) {
+    .page {
+        &__order {
+            .order__inner {
+                display: block !important;
+            }
+            .order__form {
+                margin: 30px auto 30px;
+            }
+            .header__btn {
+                display: block;
+                margin: 0 auto;
+            }
+            .order__info {
+                &-text {
+                    text-align: center !important;
+                }
+                &-subtext {
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1000px){
+    .mobilephone__inner {
+        display: block;
+    }
+    .notebook__inner{
+        display: none;
+    }
+}
+@media (max-width: 760px) {
+    .page {
+        &__order {
+            .order__info-text {
+                font-size: 24px;
+                line-height: 28px;
+            }
+            .order__info-subtext{
+                font-size: 23px;
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .notebook{
+        height: 744px;
+        margin-top: -160px;
+        margin-bottom: 20px;
+    }
+    .page {
+        &__order {
+            .order__info-text {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            .order__info-subtext{
+                font-size: 19px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .page {
+        &__order {
+            .order__info-text {
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}

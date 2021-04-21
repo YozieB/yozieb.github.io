@@ -1,0 +1,135 @@
+@import "vars";
+@import "global";
+@import "fonts";
+
+@import "blocks/main";
+
+
+
+//Brief
+
+@import "blocks/brief";
+
+// range input
+
+@import "blocks/input-range";
+
+// pizza page
+
+@import 'blocks/pizza';
+
+//comments
+
+@import 'blocks/comments';
+
+//landings
+
+@import 'blocks/landings';
+
+//Google adv
+
+@import 'blocks/google';
+
+//Mobile
+
+@import 'blocks/mobile';
+
+//Content
+@import 'blocks/content';
+
+//Branding
+@import "blocks/branding";
+
+//Rework
+@import "blocks/rework";
+
+//Redesign
+@import "blocks/redesign";
+
+//Tech
+@import "blocks/tech";
+
+//Develop
+@import "blocks/develop";
+
+//Audit
+@import "blocks/audit";
+
+//CRM / Automatization
+@import "blocks/crm";
+
+// Seo
+@import "blocks/seo";
+
+// SMM
+@import 'blocks/smm';
+
+// Calculator
+@import "blocks/calc";
+// Money
+@import "blocks/money";
+// Home
+@import "blocks/home";
+
+//Contacts
+@import "blocks/contacts";
+
+//Portfolio
+@import "blocks/portfolio";
+
+//Megazoo
+@import "blocks/megazoo";
+
+// Pizza media
+@import 'media/pizza-media.scss';
+// Main media
+@import "media/main-media";
+// mobile media
+@import "media/mobile-media";
+// Comments media
+@import "media/comments-media";
+// Landings media
+@import "media/landings-media";
+// Goolge-adv media
+@import "media/google-media";
+// content-media
+@import "media/content-media";
+// branding-media
+@import "media/branding-media";
+// rework-media
+@import "media/rework-media";
+// redesign-media
+@import "media/redesign-media";
+// tech-media
+@import "media/tech-media";
+// develop-media
+@import "media/develop-media";
+// audit-media
+@import "media/audit-media";
+// crm-media
+@import "media/crm-media";
+//seo-media
+@import "media/seo-media";
+//smm-media
+@import "media/smm-media";
+//calculator-media
+@import "media/calc-media";
+//money-media
+@import "media/money-media";
+//home-media
+@import "media/home-media";
+
+//megazoo-media
+@import "media/megazoo-media";
+
+//contacts-media
+@import "media/contacts-media";
+
+//portfolio-media
+@import "media/portfolio-media";
+
+@import 'blocks/page';
+// Dark theme
+
+@import "blocks/darktheme";
+

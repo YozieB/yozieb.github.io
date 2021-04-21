@@ -1,0 +1,53 @@
+.calc {
+    .pizza__item{
+        max-width: 650px;
+        &-text{
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+    .pizza__item-preview {
+        top: 140px;
+        &-second {
+            top: 414px;
+            right: -89px;
+        }
+    }
+    &__header {
+        margin-bottom: 0;
+    }
+    &__title {
+        max-width: 100%;
+        &-sub {
+            text-align: center;
+            display: inline-block;
+        }
+    }
+    &__text {
+        max-width: 100%;
+        font-size: 23px;
+    }
+    &__item {
+        /* margin-left: 320px; */
+        max-width: 600px;
+        width: 100%;
+        &-title{
+            font-size: 65px;
+        }
+    }
+    &__inner {
+        margin-top: 225px;
+        align-items: start;
+        &-last {
+            margin-top: -350px;
+            img {
+                filter: none;
+                transform: translateY(35%);
+            }
+        }
+        &-bottom {
+            margin-bottom: 250px;
+        }
+    }
+}
