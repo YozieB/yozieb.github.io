@@ -14,4 +14,16 @@ $(function(){
       });
 
 
+      function toggleSlide(item) {
+        $(item).each(function (i) {
+            $(this).on('click', function (e) {
+                e.preventDefault();
+                $('.questions__item-descr').eq(i).slideToggle();
+                $('.questions__item-link').eq(i).toggleClass('questions__item-link-rotated');
+            });
+        });
+    };
+    
+    toggleSlide('.questions__item-link'); 
+
 });
