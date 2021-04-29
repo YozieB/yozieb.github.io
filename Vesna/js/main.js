@@ -29,6 +29,9 @@ $(function(){
 
 });
 
+$('.info__form-item-guest').on('click', function(){
+  $('.info__popup').slideToggle('2000',"swing");
+});
 $('[data-modal=rules]').on('click', function () {
   $('.overlay, #rules').fadeIn('slow');
 });
@@ -42,3 +45,22 @@ $('.rules__close').on('click', function () {
 $('.order__close').click(function () {
   $('.popup').fadeOut();
 }) */
+
+$('.down').click(function () {
+  var $input = $(this).parent().find('input');
+  var count = parseInt($input.val()) - 1;
+  count = count < 1 ? 1 : count;
+  $input.val(count);
+  $input.change();
+  return false;
+});
+$('.up').click(function () {
+  var $input = $(this).parent().find('input');
+  $input.val(parseInt($input.val()) + 1);
+  $input.change();
+  return false;
+});
+
+
+
+

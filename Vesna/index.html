@@ -58,9 +58,76 @@
                 </div>
                 <form action="#">
                     <div class="info__form-item">
-                        
+                        <div class="info__form-item-left">
+                            <div class="info__form-item-title">
+                                Заезд:
+                            </div>
+                            <input class="info__form-input" type="date" id="start" name="trip-start"
+                            value="2021-04-15">   
+                        </div>
+                        <div class="info__form-square">
+
+                        </div>
                     </div>
+                    <div class="info__form-item">
+                        <div class="info__form-item-left">
+                            <div class="info__form-item-title">
+                                Выезд:
+                            </div>
+                            <input class="info__form-input" type="date" id="end" name="trip-end"
+                            value="2021-04-15">   
+                        </div>
+                        <div class="info__form-square">
+
+                        </div>
+                    </div>
+                    <div class="info__form-item info__form-item-guest">
+                        <div class="info__form-item-left">
+                            <div class="info__form-item-title">
+                                Гости:
+                            </div>
+                            <div class="info__form-ppl"> 
+                                <span>1</span> взрослый, <span>5</span> детей  
+                            </div>
+                        </div>
+                        <div class="info__form-square">
+
+                        </div>
+                    </div>
+                    <button type="submit" class="about__btn contacts__btn info__form-btn">
+                        Забронировать номер
+                    </button>
                 </form>
+                <div class="info__popup">
+                    <div class="info__popup-title">
+                        Количество гостей 
+                    </div>
+                    <div class="info__popup-divider"></div>
+                    <div class="info__popup-text">
+                        <span>
+                            <div class="info__popup-text-title">
+                                Взрослые
+                            </div>
+                            <div class="amount">
+                                <span class="down">-</span>
+                                <input class="quantity" type="text" value="1" />
+                                <span class="up">+</span>
+                            </div>
+                        </span>
+                        <span>
+                            <div class="info__popup-text-title">
+                                Взрослые
+                            </div>
+                            <div class="amount">
+                                <span class="down">-</span>
+                                <input class="quantity" type="text" value="1" />
+                                <span class="up">+</span>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="info__popup-divider"></div>
+                    <button type="submit" class="about__btn contacts__btn info__popup-btn">Готово</button>
+                </div>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -616,7 +683,7 @@
                         <li><a href="#">Вопросы</a></li>
                     </ul>
                 </div>
-                <a href="#" class="header__rules">
+                <a href="#" class="header__rules" data-modal="rules">
                     Правила проживания
                 </a>
             </div>
