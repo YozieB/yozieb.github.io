@@ -26,4 +26,19 @@ $(function(){
     
     toggleSlide('.questions__item-link'); 
 
+
 });
+
+$('[data-modal=rules]').on('click', function () {
+  $('.overlay, #rules').fadeIn('slow');
+});
+
+$('.rules__close').on('click', function () {
+  $('.overlay, #rules, #order, #thanks').fadeOut('slow');
+});
+/* $('[data-modal=rules]').click(function () {
+  $('.overlay').fadeIn();
+})
+$('.order__close').click(function () {
+  $('.popup').fadeOut();
+}) */
