@@ -48,7 +48,7 @@
             <div class="info__title section__title animate__animated wow animate__fadeInDown">
                 Гостевой дом на берегу черного моря
             </div>
-            <ul class="info__list">
+            <ul class="info__list animate__animated wow animate__fadeInLeft" >
                 <li class="animate__animated wow animate__fadeInLeft" data-wow-delay=".1s">Встреча на ЖД или авто вокзале, бесплатно</li>
                 <li class="animate__animated wow animate__fadeInLeft" data-wow-delay=".3s">Территория дома окружена южным лесом (лес без клещей)</li>
                 <li class="animate__animated wow animate__fadeInLeft" data-wow-delay=".5s">В 10 минутах ходьбы находится чистый галечный пляж</li>
@@ -187,15 +187,16 @@
                 </div>
             </div>
         </div>
-        <svg class="about__svg" id="prices" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg class="about__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#FFF3CF" fill-opacity="1"
                 d="M0,256L80,250.7C160,245,320,235,480,202.7C640,171,800,117,960,80C1120,43,1280,21,1360,10.7L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
             </path>
         </svg>
     </section>
-    <section class="prices">
+    <section class="prices" >
+        <div class="prices__tag" style="position: absolute; top: -50px;" id="prices" ></div>
         <div class="container">
-            <div class="section__title animate__animated wow animate__fadeInLeft">
+            <div class="section__title animate__animated wow animate__fadeInLeft" id="prices">
                 Номера и цены
             </div>
             <div class="section__subtitle prices__subtitle animate__animated wow animate__fadeInUp" data-wow-delay=".1s">
@@ -390,7 +391,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="prices__item animate__animated wow animate__zoomIn" data-wow-delay=".10s">
+                <div class="prices__item animate__animated wow animate__zoomIn" data-wow-delay="1s">
                     <img src="images/prices-5.jpg" alt="">
                     <div class="prices__descr">
                         <div class="prices__descr-title prices__descr-bigtitle">
@@ -484,7 +485,8 @@
         </div>
 
     </section>
-    <section class="questions" id="questions">
+    <section class="questions" style="position: relative;">
+        <div class="questions__tag" style="position: absolute; top: -100px;" id="questions"></div>
         <div class="container">
             <div class="section__title questions__title animate__animated wow animate__fadeInDown">
                 Популярные вопросы
@@ -515,7 +517,7 @@
                     До моря 800м по прямой дороге, или 12 мин пешком.
                 </div>
             </div>
-            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".5s">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".4s">
                 <div class="questions__item-title">
                     <span>
                         Какой размер предоплаты надо внести для бронирования номера?
@@ -528,7 +530,7 @@
                     Стандартная предоплата составляет 3 000 руб.
                 </div>
             </div>
-            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".7s">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".5s">
                 <div class="questions__item-title">
                     <span>
                         Если я не смогу приехать, как я смогу вернуть предоплату?
@@ -542,7 +544,7 @@
                     объеме. Если вы отменяете предоплату позднее 14 дней до заезда, то предоплата, увы, не возвращается.
                 </div>
             </div>
-            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".9s">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".6s">
                 <div class="questions__item-title">
                     <span>
                         Имеется ли место для парковки автомобиля?
@@ -555,7 +557,7 @@
                     Да есть, охраняемая платная и бесплатная около нашего участка.
                 </div>
             </div>
-            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".11s">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".7s">
                 <div class="questions__item-title">
                     <span>
                         Есть ли какие-нибудь скидки?
@@ -569,7 +571,7 @@
                     <span>А так же детям до 10 лет – скидка 10%.</span>
                 </div>
             </div>
-            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".13s">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".8s">
                 <div class="questions__item-title">
                     <span>
                         Шумно ли на территории?
@@ -590,7 +592,7 @@
                     </span>
                 </div>
             </div>
-            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".15s">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".9s">
                 <div class="questions__item-title">
                     <span>
                         Разрешено ли проживание с животными?
@@ -604,7 +606,7 @@
                     воспитанных и тихих.
                 </div>
             </div>
-            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".17s">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay="1s">
                 <div class="questions__item-title">
                     <span>
                         Во всех ли номерах есть Wi-Fi?
@@ -666,10 +668,10 @@
                 </div>
                 <div class="footer__menu">
                     <ul class="footer__menu-nav">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Номера</a></li>
-                        <li><a href="#">Наши услуги</a></li>
-                        <li><a href="#">Вопросы</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#prices">Номера</a></li>
+                        <li><a href="#respect">Наши услуги</a></li>
+                        <li><a href="#questions">Вопросы</a></li>
                     </ul>
                 </div>
                 <a href="javascript:void(0);" data-modal="rules" class="header__rules">
@@ -681,8 +683,6 @@
             </div>
         </div>
     </footer>
-
-
 
     <div class="overlay">
         <div class="rules" id="rules">
