@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vesna</title>
-    <link rel="stylesheet" href="css/libs.min.css">
+	 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,11 +19,16 @@
                 <a href="#"><img src="images/header-logo.svg" alt=""></a>
                 <nav class="header__menu">
                     <ul class="header__menu-list">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Номера</a></li>
-                        <li><a href="#">Наши услуги</a></li>
-                        <li><a href="#">Вопросы</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#prices">Номера</a></li>
+                        <li><a href="#respect">Наши услуги</a></li>
+                        <li><a href="#questions">Вопросы</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </nav>
                 <a href="javascript:void(0);" data-modal="rules" class="header__rules">
                     Правила проживания
@@ -36,18 +43,18 @@
             </div>
         </div>
     </header>
-    <section class="info">
+    <section class="info" id="respect">
         <div class="container">
-            <div class="info__title section__title">
+            <div class="info__title section__title animate__animated wow animate__fadeInDown">
                 Гостевой дом на берегу черного моря
             </div>
             <ul class="info__list">
-                <li>Встреча на ЖД или авто вокзале, бесплатно</li>
-                <li>Территория дома окружена южным лесом (лес без клещей)</li>
-                <li>В 10 минутах ходьбы находится чистый галечный пляж</li>
-                <li>Территория гостевого дома закрыта от посторонних</li>
+                <li class="animate__animated wow animate__fadeInLeft" data-wow-delay=".1s">Встреча на ЖД или авто вокзале, бесплатно</li>
+                <li class="animate__animated wow animate__fadeInLeft" data-wow-delay=".3s">Территория дома окружена южным лесом (лес без клещей)</li>
+                <li class="animate__animated wow animate__fadeInLeft" data-wow-delay=".5s">В 10 минутах ходьбы находится чистый галечный пляж</li>
+                <li class="animate__animated wow animate__fadeInLeft" data-wow-delay=".7s">Территория гостевого дома закрыта от посторонних</li>
             </ul>
-            <div class="info__form">
+            <div class="info__form animate__animated wow animate__fadeInUp">
                 <div class="info__form-descr">
                     <div class="info__form-title">
                         БРОНИРОВАНИЕ НОМЕРОВ
@@ -62,10 +69,10 @@
                             <div class="info__form-item-title">
                                 Заезд:
                             </div>
-                            <input class="info__form-input" type="date" id="start" name="trip-start" value="2021-04-15">
+                            <input class="info__form-input datepickerstart" type="text" id="start" name="trip-start" value="2021.04.15">
                         </div>
-                        <div class="info__form-square">
-
+                        <div class="info__form-square pickerstart" style="display: flex; justify-content: center; cursor:pointer;">
+                            <img src="images/calendar-icon.svg" alt="" style="width: 60%;">
                         </div>
                     </div>
                     <div class="info__form-item">
@@ -73,10 +80,10 @@
                             <div class="info__form-item-title">
                                 Выезд:
                             </div>
-                            <input class="info__form-input" type="date" id="end" name="trip-end" value="2021-04-15">
+                            <input class="info__form-input datepickerend" type="text" id="end" name="trip-end" value="2021.04.15">
                         </div>
-                        <div class="info__form-square">
-
+                        <div class="info__form-square pickerend" style="display: flex; justify-content: center; cursor:pointer;">
+                            <img src="images/calendar-icon.svg" alt="" style="width: 60%;">
                         </div>
                     </div>
                     <div class="info__form-item info__form-item-guest">
@@ -85,7 +92,7 @@
                                 Гости:
                             </div>
                             <div class="info__form-ppl">
-                                <span>1</span> взрослый, <span>5</span> детей
+                                <span id="adultspan">1</span> взрослых, <span id="childspan">1</span> детей
                             </div>
                         </div>
                         <div class="info__form-square">
@@ -104,31 +111,31 @@
                     <div class="info__popup-text">
                         <span>
                             <div class="info__popup-text-title">
-                                Взрослые
+                                Взрослых
                             </div>
                             <div class="amount">
                                 <span class="down">-</span>
-                                <input class="quantity" type="text" value="1" />
+                                <input class="quantity" id="adult" type="text" value="1" />
                                 <span class="up">+</span>
                             </div>
                         </span>
                         <span>
                             <div class="info__popup-text-title">
-                                Взрослые
+                                Детей
                             </div>
                             <div class="amount">
                                 <span class="down">-</span>
-                                <input class="quantity" type="text" value="1" />
+                                <input class="quantity" id="child" type="text" value="1" />
                                 <span class="up">+</span>
                             </div>
                         </span>
                     </div>
                     <div class="info__popup-divider"></div>
-                    <button type="submit" class="about__btn contacts__btn info__popup-btn">Готово</button>
+                    <button type="submit" class="about__btn contacts__btn info__popup-btn closehead-popup">Готово</button>
                 </div>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg id="about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#71CAEC" fill-opacity="1"
                 d="M0,32L80,53.3C160,75,320,117,480,122.7C640,128,800,96,960,74.7C1120,53,1280,43,1360,37.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
             </path>
@@ -136,14 +143,14 @@
     </section>
     <section class="about">
         <div class="container">
-            <div class="about__title section__title">
+            <div class="about__title section__title animate__animated wow animate__fadeInLeft">
                 О нас
             </div>
-            <div class="about__subtitle section__subtitle">
+            <div class="about__subtitle section__subtitle animate__animated wow animate__fadeInUp">
                 Отдыхая у нас - Вы отдыхаете
             </div>
             <div class="about__inner">
-                <div class="about__descr">
+                <div class="about__descr animate__animated wow animate__fadeInLeft" data-wow-delay=".2s">
                     <div class="about__text">
                         Гостевой дом «ВЕСНА-6 » находится в междугорье,
                         с особым микроклиматом, оказывающим оздоровительное действие.
@@ -154,11 +161,11 @@
                         утопает в зелени и цветах, а близость моря создает оригинальный воздушный коктейль из горного
                         воздуха, запаха морской соли и ароматов цветущего сада..
                     </div>
-                    <a href="#" class="about__btn">
+                    <a href="javascript:void(0);" class="about__btn" data-modal="callback">
                         Заказать обратный звонок
                     </a>
                 </div>
-                <div class="about__points">
+                <div class="about__points animate__animated wow animate__fadeInDown">
                     <ul class="about__list">
                         <li>Кафе - Бар</li>
                         <li>Зона барбекю</li>
@@ -171,7 +178,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="about__img">
+                <div class="about__img animate__animated wow animate__fadeInUp" >
                     <div class="about__img-item">
                         <img src="images/about-img-1.png" alt="">
                         <img src="images/about-img-2.png" alt="">
@@ -180,7 +187,7 @@
                 </div>
             </div>
         </div>
-        <svg class="about__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg class="about__svg" id="prices" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#FFF3CF" fill-opacity="1"
                 d="M0,256L80,250.7C160,245,320,235,480,202.7C640,171,800,117,960,80C1120,43,1280,21,1360,10.7L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
             </path>
@@ -188,14 +195,14 @@
     </section>
     <section class="prices">
         <div class="container">
-            <div class="section__title">
+            <div class="section__title animate__animated wow animate__fadeInLeft">
                 Номера и цены
             </div>
-            <div class="section__subtitle prices__subtitle">
+            <div class="section__subtitle prices__subtitle animate__animated wow animate__fadeInUp" data-wow-delay=".1s">
                 Ждем вас в гости, выберите номер
             </div>
             <div class="prices__inner">
-                <div class="prices__item">
+                <div class="prices__item animate__animated wow animate__zoomIn">
                     <img src="images/prices-1.jpg" alt="">
                     <div class="prices__descr">
                         <div class="prices__descr-title">
@@ -226,7 +233,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="prices__item">
+                <div class="prices__item animate__animated wow animate__zoomIn" data-wow-delay=".1s">
                     <img src="images/prices-2.jpg" alt="">
                     <div class="prices__descr">
                         <div class="prices__descr-title">
@@ -244,9 +251,6 @@
                                     12 м²
                                 </div>
                             </div>
-                            <!-- <div class="prices__descr-item">
-                                <img src="images/prices-descr-2.svg" alt="">
-                            </div> -->
                             <div class="prices__descr-item">
                                 <div class="prices__descr-text prices__descr-room">
                                     1 комната
@@ -255,11 +259,12 @@
                         </div>
                         <div class="prices__descr-inner">
                             <img src="images/prices-descr-3.svg" alt="">
-                            <a href="#" class="prices__descr-link">подробнее</a>
+                            <a href="javascript:void(0);" data-modal="number-two"
+                                class="prices__descr-link">подробнее</a>
                         </div>
                     </div>
                 </div>
-                <div class="prices__item">
+                <div class="prices__item animate__animated wow animate__zoomIn" data-wow-delay=".3s">
                     <img src="images/prices-3.jpg" alt="">
                     <div class="prices__descr">
                         <div class="prices__descr-title">
@@ -277,9 +282,6 @@
                                     12 м²
                                 </div>
                             </div>
-                            <!-- <div class="prices__descr-item">
-                                <img src="images/prices-descr-2.svg" alt="">
-                            </div> -->
                             <div class="prices__descr-item">
                                 <div class="prices__descr-text prices__descr-room">
                                     1 комната
@@ -288,11 +290,12 @@
                         </div>
                         <div class="prices__descr-inner">
                             <img src="images/prices-descr-3.svg" alt="">
-                            <a href="#" class="prices__descr-link">подробнее</a>
+                            <a href="javascript:void(0);" data-modal="number-three"
+                                class="prices__descr-link">подробнее</a>
                         </div>
                     </div>
                 </div>
-                <div class="prices__item">
+                <div class="prices__item animate__animated wow animate__zoomIn" data-wow-delay=".5s">
                     <img src="images/prices-4.jpg" alt="">
                     <div class="prices__descr">
                         <div class="prices__descr-title">
@@ -310,9 +313,6 @@
                                     12 м²
                                 </div>
                             </div>
-                            <!-- <div class="prices__descr-item">
-                                <img src="images/prices-descr-2.svg" alt="">
-                            </div> -->
                             <div class="prices__descr-item">
                                 <div class="prices__descr-text prices__descr-room">
                                     1 комната
@@ -321,13 +321,14 @@
                         </div>
                         <div class="prices__descr-inner">
                             <img src="images/prices-descr-3.svg" alt="">
-                            <a href="#" class="prices__descr-link">подробнее</a>
+                            <a href="javascript:void(0);" data-modal="number-four"
+                                class="prices__descr-link">подробнее</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="prices__inner prices__inner-last">
-                <div class="prices__item">
+                <div class="prices__item animate__animated wow animate__zoomIn" data-wow-delay=".7s">
                     <img src="images/prices-5.jpg" alt="">
                     <div class="prices__descr">
                         <div class="prices__descr-title prices__descr-bigtitle">
@@ -345,9 +346,6 @@
                                     12 м²
                                 </div>
                             </div>
-                            <!-- <div class="prices__descr-item">
-                                <img src="images/prices-descr-2.svg" alt="">
-                            </div> -->
                             <div class="prices__descr-item">
                                 <div class="prices__descr-text prices__descr-room">
                                     1 комната
@@ -356,11 +354,12 @@
                         </div>
                         <div class="prices__descr-inner">
                             <img src="images/prices-descr-3.svg" alt="">
-                            <a href="#" class="prices__descr-link">подробнее</a>
+                            <a href="javascript:void(0);" data-modal="number-five"
+                                class="prices__descr-link">подробнее</a>
                         </div>
                     </div>
                 </div>
-                <div class="prices__item">
+                <div class="prices__item animate__animated wow animate__zoomIn" data-wow-delay=".9s">
                     <img src="images/prices-6.jpg" alt="">
                     <div class="prices__descr">
                         <div class="prices__descr-title">
@@ -378,9 +377,6 @@
                                     12 м²
                                 </div>
                             </div>
-                            <!-- <div class="prices__descr-item">
-                                <img src="images/prices-descr-2.svg" alt="">
-                            </div> -->
                             <div class="prices__descr-item">
                                 <div class="prices__descr-text prices__descr-room">
                                     1 комната
@@ -389,11 +385,12 @@
                         </div>
                         <div class="prices__descr-inner">
                             <img src="images/prices-descr-3.svg" alt="">
-                            <a href="#" class="prices__descr-link">подробнее</a>
+                            <a href="javascript:void(0);" data-modal="number-six"
+                                class="prices__descr-link">подробнее</a>
                         </div>
                     </div>
                 </div>
-                <div class="prices__item">
+                <div class="prices__item animate__animated wow animate__zoomIn" data-wow-delay=".10s">
                     <img src="images/prices-5.jpg" alt="">
                     <div class="prices__descr">
                         <div class="prices__descr-title prices__descr-bigtitle">
@@ -412,9 +409,6 @@
                                     12 м²
                                 </div>
                             </div>
-                            <!-- <div class="prices__descr-item">
-                                <img src="images/prices-descr-2.svg" alt="">
-                            </div> -->
                             <div class="prices__descr-item">
                                 <div class="prices__descr-text prices__descr-room">
                                     1 комната
@@ -423,7 +417,8 @@
                         </div>
                         <div class="prices__descr-inner">
                             <img src="images/prices-descr-3.svg" alt="">
-                            <a href="#" class="prices__descr-link">подробнее</a>
+                            <a href="javascript:void(0);" data-modal="number-seven"
+                                class="prices__descr-link">подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -447,10 +442,10 @@
     </section>
     <section class="gallery">
         <div class="container">
-            <div class="section__title gallery__title">
+            <div class="section__title gallery__title animate__animated wow animate__fadeInLeft">
                 Галерея
             </div>
-            <div class="section__subtitle gallery__subtitle">
+            <div class="section__subtitle gallery__subtitle animate__animated wow animate__fadeInRight">
                 Вдали от городской суеты
             </div>
             <div class="gallery__inner">
@@ -463,10 +458,7 @@
                         <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
                         <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
                     </div>
-                    <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
-
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -480,23 +472,24 @@
     </section>
     <section class="video">
         <div class="container">
-            <div class="section__title">
+            <div class="section__title animate__animated wow animate__fadeInRight">
                 Видео-обзор
             </div>
-            <div class="video__item">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/izxP9i3Oho0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
         </div>
+        <div class="video__item">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/izxP9i3Oho0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
     </section>
-    <section class="questions">
+    <section class="questions" id="questions">
         <div class="container">
-            <div class="section__title questions__title">
+            <div class="section__title questions__title animate__animated wow animate__fadeInDown">
                 Популярные вопросы
             </div>
-            <div class="questions__item">
+            <div class="questions__item animate__animated wow animate__fadeIn">
                 <div class="questions__item-title">
                     <span>
                         В каком месяце происходит бронирование?
@@ -509,7 +502,7 @@
                     Бронирование открывается с 1 февраля.
                 </div>
             </div>
-            <div class="questions__item">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".3s">
                 <div class="questions__item-title">
                     <span>
                         Какое расстояние до моря?
@@ -522,7 +515,7 @@
                     До моря 800м по прямой дороге, или 12 мин пешком.
                 </div>
             </div>
-            <div class="questions__item">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".5s">
                 <div class="questions__item-title">
                     <span>
                         Какой размер предоплаты надо внести для бронирования номера?
@@ -535,7 +528,7 @@
                     Стандартная предоплата составляет 3 000 руб.
                 </div>
             </div>
-            <div class="questions__item">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".7s">
                 <div class="questions__item-title">
                     <span>
                         Если я не смогу приехать, как я смогу вернуть предоплату?
@@ -549,7 +542,7 @@
                     объеме. Если вы отменяете предоплату позднее 14 дней до заезда, то предоплата, увы, не возвращается.
                 </div>
             </div>
-            <div class="questions__item">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".9s">
                 <div class="questions__item-title">
                     <span>
                         Имеется ли место для парковки автомобиля?
@@ -562,7 +555,7 @@
                     Да есть, охраняемая платная и бесплатная около нашего участка.
                 </div>
             </div>
-            <div class="questions__item">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".11s">
                 <div class="questions__item-title">
                     <span>
                         Есть ли какие-нибудь скидки?
@@ -576,7 +569,7 @@
                     <span>А так же детям до 10 лет – скидка 10%.</span>
                 </div>
             </div>
-            <div class="questions__item">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".13s">
                 <div class="questions__item-title">
                     <span>
                         Шумно ли на территории?
@@ -597,7 +590,7 @@
                     </span>
                 </div>
             </div>
-            <div class="questions__item">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".15s">
                 <div class="questions__item-title">
                     <span>
                         Разрешено ли проживание с животными?
@@ -611,7 +604,7 @@
                     воспитанных и тихих.
                 </div>
             </div>
-            <div class="questions__item">
+            <div class="questions__item animate__animated wow animate__fadeIn" data-wow-delay=".17s">
                 <div class="questions__item-title">
                     <span>
                         Во всех ли номерах есть Wi-Fi?
@@ -628,9 +621,9 @@
     </section>
     <section class="contacts">
         <div class="container">
-            <div class="section__title contacts__title">Контакты</div>
+            <div class="section__title contacts__title animate__animated wow animate__fadeInRight">Контакты</div>
             <div class="contacts__inner">
-                <div class="contacts__form">
+                <div class="contacts__form animate__animated wow animate__fadeInUp">
                     <div class="contacts__form-title">
                         Остались вопросы?
                     </div>
@@ -647,7 +640,7 @@
                         политика конфиденциальности
                     </div>
                 </div>
-                <iframe
+                <iframe class="animate__animated wow animate__fadeInRight"
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3Adadb2a635b9f625d5d0b12e5b98274d8c91c50a417cb3178c0e2ffd4c812d372&amp;source=constructor"
                     width="812" height="492" frameborder="0"></iframe>
             </div>
@@ -656,7 +649,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <a href="#"><img src="images/header-logo.svg" alt=""></a>
+                <a class="footer__logo" href="#"><img src="images/header-logo.svg" alt=""></a>
                 <div class="footer__menu">
                     <div class="footer__menu-title">
                         Контакты:
@@ -679,7 +672,7 @@
                         <li><a href="#">Вопросы</a></li>
                     </ul>
                 </div>
-                <a href="#" class="header__rules" data-modal="rules">
+                <a href="javascript:void(0);" data-modal="rules" class="header__rules">
                     Правила проживания
                 </a>
             </div>
@@ -861,6 +854,589 @@
                 </div>
             </div>
         </div>
+        <div class="number" id="number-two">
+            <div class="rules__close">
+                &times;
+            </div>
+            <div class="number__inner">
+                <div class="number__item">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="number__item-info">
+                    <div class="number__item-title">
+                        ДВУХМЕСТНЫЙ "СТАНДАРТ"
+                    </div>
+                    <ul class="number__item-list">
+                        <li>Спальных мест: 2 </li>
+                        <li>Комнат:1</li>
+                        <li>Площадь 12м²</li>
+                    </ul>
+                    <div class="number__item-text">
+                        <p>
+                            Санузел: общий на этаже
+                        </p>
+                        <p>
+                            Кухня: кухня общая
+                        </p>
+                        <p>
+                            Мебель: две односпальные кровати, тумбочки
+                        </p>
+                    </div>
+                    <div class="number__item-subtitle">
+                        Цены по месяцам:
+                    </div>
+                    <div class="number__prices">
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Май
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июнь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июль
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Август
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Сентябрь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                    </div>
+                    <a href="javascript:void(0);" class="about__btn contacts__btn"
+                        data-modal="number-popup">Забронировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="number" id="number-three">
+            <div class="rules__close">
+                &times;
+            </div>
+            <div class="number__inner">
+                <div class="number__item">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="number__item-info">
+                    <div class="number__item-title">
+                        ТРЁХМЕСТНЫЙ "ЭКОНОМ"
+                    </div>
+                    <ul class="number__item-list">
+                        <li>Спальных мест: 2 </li>
+                        <li>Комнат:1</li>
+                        <li>Площадь 12м²</li>
+                    </ul>
+                    <div class="number__item-text">
+                        <p>
+                            Санузел: общий на этаже
+                        </p>
+                        <p>
+                            Кухня: кухня общая
+                        </p>
+                        <p>
+                            Мебель: две односпальные кровати, тумбочки
+                        </p>
+                    </div>
+                    <div class="number__item-subtitle">
+                        Цены по месяцам:
+                    </div>
+                    <div class="number__prices">
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Май
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июнь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июль
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Август
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Сентябрь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                    </div>
+                    <a href="javascript:void(0);" class="about__btn contacts__btn"
+                        data-modal="number-popup">Забронировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="number" id="number-four">
+            <div class="rules__close">
+                &times;
+            </div>
+            <div class="number__inner">
+                <div class="number__item">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="number__item-info">
+                    <div class="number__item-title">
+                        ТРЁХМЕСТНЫЙ "СТАНДАРТ"
+                    </div>
+                    <ul class="number__item-list">
+                        <li>Спальных мест: 2 </li>
+                        <li>Комнат:1</li>
+                        <li>Площадь 12м²</li>
+                    </ul>
+                    <div class="number__item-text">
+                        <p>
+                            Санузел: общий на этаже
+                        </p>
+                        <p>
+                            Кухня: кухня общая
+                        </p>
+                        <p>
+                            Мебель: две односпальные кровати, тумбочки
+                        </p>
+                    </div>
+                    <div class="number__item-subtitle">
+                        Цены по месяцам:
+                    </div>
+                    <div class="number__prices">
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Май
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июнь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июль
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Август
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Сентябрь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                    </div>
+                    <a href="javascript:void(0);" class="about__btn contacts__btn"
+                        data-modal="number-popup">Забронировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="number" id="number-five">
+            <div class="rules__close">
+                &times;
+            </div>
+            <div class="number__inner">
+                <div class="number__item">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="number__item-info">
+                    <div class="number__item-title">
+                        ЧЕТЫРЕХМЕСТНЫЙ "СТАНДАРТ"
+                    </div>
+                    <ul class="number__item-list">
+                        <li>Спальных мест: 2 </li>
+                        <li>Комнат:1</li>
+                        <li>Площадь 12м²</li>
+                    </ul>
+                    <div class="number__item-text">
+                        <p>
+                            Санузел: общий на этаже
+                        </p>
+                        <p>
+                            Кухня: кухня общая
+                        </p>
+                        <p>
+                            Мебель: две односпальные кровати, тумбочки
+                        </p>
+                    </div>
+                    <div class="number__item-subtitle">
+                        Цены по месяцам:
+                    </div>
+                    <div class="number__prices">
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Май
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июнь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июль
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Август
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Сентябрь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                    </div>
+                    <a href="javascript:void(0);" class="about__btn contacts__btn"
+                        data-modal="number-popup">Забронировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="number" id="number-six">
+            <div class="rules__close">
+                &times;
+            </div>
+            <div class="number__inner">
+                <div class="number__item">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="number__item-info">
+                    <div class="number__item-title">
+                        ПЯТИМЕСТНЫЙ "СТАНДАРТ"
+                    </div>
+                    <ul class="number__item-list">
+                        <li>Спальных мест: 2 </li>
+                        <li>Комнат:1</li>
+                        <li>Площадь 12м²</li>
+                    </ul>
+                    <div class="number__item-text">
+                        <p>
+                            Санузел: общий на этаже
+                        </p>
+                        <p>
+                            Кухня: кухня общая
+                        </p>
+                        <p>
+                            Мебель: две односпальные кровати, тумбочки
+                        </p>
+                    </div>
+                    <div class="number__item-subtitle">
+                        Цены по месяцам:
+                    </div>
+                    <div class="number__prices">
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Май
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июнь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июль
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Август
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Сентябрь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                    </div>
+                    <a href="javascript:void(0);" class="about__btn contacts__btn"
+                        data-modal="number-popup">Забронировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="number" id="number-seven">
+            <div class="rules__close">
+                &times;
+            </div>
+            <div class="number__inner">
+                <div class="number__item">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/gallery-2.jpg" alt=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="number__item-info">
+                    <div class="number__item-title">
+                        ОТДЕЛЬНО СТОЯЩИЙ
+                        ДВУХКОМНАТНЫЙ ДОМИК
+                    </div>
+                    <ul class="number__item-list">
+                        <li>Спальных мест: 2 </li>
+                        <li>Комнат:1</li>
+                        <li>Площадь 12м²</li>
+                    </ul>
+                    <div class="number__item-text">
+                        <p>
+                            Санузел: общий на этаже
+                        </p>
+                        <p>
+                            Кухня: кухня общая
+                        </p>
+                        <p>
+                            Мебель: две односпальные кровати, тумбочки
+                        </p>
+                    </div>
+                    <div class="number__item-subtitle">
+                        Цены по месяцам:
+                    </div>
+                    <div class="number__prices">
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Май
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июнь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Июль
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Август
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                        <div class="number__prices-line">
+                            <div class="number__prices-month">
+                                Сентябрь
+                            </div>
+                            <div class="number__prices-amount">
+                                <span> 2200 руб.</span>/чел.
+                            </div>
+                        </div>
+                        <div class="number__prices-divider"></div>
+                    </div>
+                    <a href="javascript:void(0);" class="about__btn contacts__btn"
+                        data-modal="number-popup">Забронировать</a>
+                </div>
+            </div>
+        </div>
         <div class="number__popup" id="number-popup">
             <div class="number__popup-close">
                 &times;
@@ -875,7 +1451,7 @@
                             <div class="info__form-item-title">
                                 Заезд:
                             </div>
-                            <input class="info__form-input" type="date" id="start-popup" name="trip-start"
+                            <input class="info__form-input" type="text" id="start-popup" name="trip-start"
                                 value="2021-04-15">
                         </div>
                         <div class="info__form-square">
@@ -887,7 +1463,7 @@
                             <div class="info__form-item-title">
                                 Выезд:
                             </div>
-                            <input class="info__form-input" type="date" id="end-popup" name="trip-end"
+                            <input class="info__form-input" type="text" id="end-popup" name="trip-end"
                                 value="2021-04-15">
                         </div>
                         <div class="info__form-square">
@@ -903,27 +1479,27 @@
                     <div class="info__popup-text">
                         <span>
                             <div class="info__popup-text-title">
-                                Взрослые
+                                Взрослых
                             </div>
                             <div class="amount">
                                 <span class="down">-</span>
-                                <input class="quantity" type="text" value="1" />
+                                <input class="quantity" id="adult-popup" type="text" value="1" />
                                 <span class="up">+</span>
                             </div>
                         </span>
                         <span>
                             <div class="info__popup-text-title">
-                                Взрослые
+                                Детей
                             </div>
                             <div class="amount">
                                 <span class="down">-</span>
-                                <input class="quantity" type="text" value="1" />
+                                <input class="quantity" id="child-popup" type="text" value="1" />
                                 <span class="up">+</span>
                             </div>
                         </span>
                     </div>
                     <div class="info__popup-divider"></div>
-                    <button type="submit" class="about__btn contacts__btn info__popup-btn">Готово</button>
+                    <button type="button" class="about__btn contacts__btn info__popup-btn close-popup">Готово</button>
                 </div>
                 <div class="info__form-item info__form-item-popup">
                     <div class="info__form-item-left">
@@ -931,28 +1507,50 @@
                             Гости:
                         </div>
                         <div class="info__form-ppl">
-                            <span>1</span> взрослый, <span>5</span> детей
+                            <span id="adultspan-popup">1</span> взрослыx, <span id="childspan-popup">1</span> детей
                         </div>
                     </div>
                     <div class="info__form-square"> </div>
                 </div>
                 <input class="number__popup-input" type="text" placeholder="Ваше имя">
-                        <input class="number__popup-input" type="number" placeholder="Ваш номер телефона">
-                        <button type="submit" class="about__btn contacts__btn">Отправить</button>
-                    </form>
-                    <div class="contacts__form-text">
-                        политика конфиденциальности
-                    </div>
+                <input class="number__popup-input" type="number" placeholder="Ваш номер телефона">
+                <button type="submit" class="about__btn contacts__btn">Отправить</button>
             </form>
+            <div class="contacts__form-text">
+                политика конфиденциальности
+            </div>
+            </form>
+        </div>
+        <div class="callback" id="callback">
+            <div class="rules__close">
+                &times;
+            </div>
+            <div class="callback__title">
+                Оставьте данные
+            </div>
+            <div class="callback__subtitle">
+                и мы перезвоним вам
+            </div>
+            <form action="#">
+                <input type="text" class="number__popup-input" placeholder="Введите ваше имя">
+                <input type="number" class="number__popup-input" placeholder="Введите Ваш номер телефона">
+                <button type="submit" class="about__btn contacts__btn">Заказать обратный звонок</button>
+            </form>
+            <div class="contacts__form-text">
+                политика конфиденциальности
+            </div>
         </div>
     </div>
 
 
 
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
+	
+
 </body>
 
 </html>

@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+// Disalbe ios horizontal scroll
+//Если будет скролл надо еще родителю overflow-x hidden
+/* html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+} */
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+    &:hover {
+        color: $orange;
+    }
+}
+body {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1255px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.section {
+    &__title {
+        padding-left: 119px;
+        font-weight: 500;
+        font-size: 64px;
+        color: #fff;
+        position: relative;
+        &::before{
+            content:'';
+            position: absolute;
+            width: 117px;
+            height: 49px;
+            left: 0;
+            top: 12px;
+            background-image: url(../images/title.svg);
+        }
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 24px;
+        margin-top: 20px;
+        color: #fff;
+    }
+}
+
+
+.hamburger {
+    display: none;
+}
