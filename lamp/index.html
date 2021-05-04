@@ -11,120 +11,255 @@
 </head>
 
 <body>
-    <div class="container">
-        <!----------------------------HEADER---------------------------->
-        <header class="header">
-            <!----------------------------HEADER > LOGO---------------------------->
-            <div class="logo">
-                <a href="#">
-                    <img src="images/logo.svg" alt="Teleport">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="header__logo">
+                    <img src="images/logo2.png" alt="">
                 </a>
-            </div>
-
-            <div class="list">
-                <ul>
-                    <li><a href="#">Обзор сервиса</a></li>
-                    <li><a href="#">Тарифы</a></li>
-                    <li><a href="#">Сценарии</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-
-            <div class="logs">
-                <div class="log-in">
-                    <a href="#">
-                        <img src="images/user.svg" alt="User">
-                        <span>Войти</span>
-                    </a>
-                </div>
-                <div class="reg">
-                    <a href="#">
-                        <img src="images/log-out.svg" alt="Log out">
-                        <span>Регистрация</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="burger">
-                <div class="burger_button">
-                    <div class="burger_item"></div>
-                    <div class="burger_item"></div>
-                    <div class="burger_item"></div>
-                </div>
-                <div class="burger_list">
+                <div class="list">
                     <ul>
                         <li><a href="#">Обзор сервиса</a></li>
-                        <li><a href="#">Тарифы</a></li>
+                        <li><a href="#tariffs">Тарифы</a></li>
                         <li><a href="#">Сценарии</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
-                    <div class="logs_burger">
-                        <div class="logs_burger_log_in">
-                            <a href="#">
-                                <img src="images/user.svg" alt="User">
-                                <span>Войти</span>
-                            </a>
-                        </div>
-                        <div class="logs_burger_reg">
-                            <a href="#">
-                                <img src="images/log-out.svg" alt="Log out">
-                                <span>Регистрация</span>
-                            </a>
+                </div>
+                <div class="logs">
+                    <div class="log-in">
+                        <a href="#">
+                            <img src="images/inst.svg" alt="User">
+                        </a>
+                    </div>
+                    <div class="reg">
+                        <a href="#">
+                            <img src="images/telegram.svg" alt="Log out">
+                        </a>
+                    </div>
+                    <div class="reg">
+                        <a href="#">
+                            <img src="images/tiktok.svg" alt="Log out">
+                        </a>
+                    </div>
+                </div>
+                <div class="burger">
+                    <div class="burger_button">
+                        <div class="burger_item"></div>
+                        <div class="burger_item"></div>
+                        <div class="burger_item"></div>
+                    </div>
+                    <div class="burger_list">
+                        <ul>
+                            <li><a href="#">Обзор сервиса</a></li>
+                            <li><a href="#">Тарифы</a></li>
+                            <li><a href="#">Сценарии</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                        <div class="logs_burger">
+                            <div class="logs_burger_log_in">
+                                <a href="#">
+                                    <img src="images/user.svg" alt="User">
+                                    <span>Войти</span>
+                                </a>
+                            </div>
+                            <div class="logs_burger_reg">
+                                <a href="#">
+                                    <img src="images/log-out.svg" alt="Log out">
+                                    <span>Регистрация</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!----------------------------HEADER > BURGER MENU---------------------------->
-
-        </header>
-        <!----------------------------INTRO---------------------------->
-        <div class="intro">
-            <div class="text_intro">
-                <h1>Угловой <span class="red_word">R</span><span class="green_word">G</span><span class="blue_word">B</span> торшер</h1>
-                <span class="subtitle_intro">Стильный торшер в скандинавском стиле <br>с дистанционным управлением. <br>
-                    Прекрасно дополнит дизайн любой комнаты
-                </span>
-            </div>
-
-            <a href="#" class="btn_link"><button class="btn">Заказать сейчас</button></a>
-
-            <div class="r_img">
-                <img src="images/header-lamp.jpg" alt="Phone">
+        </div>
+        <!----DIVIDER-->
+        <div class="custom-shape-divider-top-1619902473">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+    <!----------------------------INTRO---------------------------->
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__item">
+                    <div class="text_intro">
+                        <h1>Угловой <span class="red_word">R</span><span class="green_word">G</span><span
+                                class="blue_word">B</span> торшер</h1>
+                        <span class="subtitle_intro">Стильный торшер в скандинавском стиле <br>с дистанционным
+                            управлением. <br>
+                            Прекрасно дополнит дизайн любой комнаты
+                        </span>
+                    </div>
+                    <a href="#" class="btn_link"><button class="btn">Заказать сейчас</button></a>
+                </div>
+                <div class="intro__item">
+                    <img src="images/for-whow/school.jpg" alt="Phone">
+                </div>
             </div>
         </div>
-        <!----------------------------FOR WHOM---------------------------->
-        <div class="for_whom">
-            <div class="t_for_whom">Для кого сервис</div>
+        <div class="custom-shape-divider-top-1619902969">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <!----------------------------FOR WHOM---------------------------->
+    <section class="services">
+        <div class="container">
+            <div class="services__title">Для кого сервис</div>
             <!----------------------------INTRO > CARDS---------------------------->
             <div class="cards">
                 <div class="card">
                     <div class="title_card">Блогеры</div>
                     <div class="subtitle_card">Чек - листы, гайды - выдавайте за подписку на вас.</div>
-                    <img class="card_img_blogger" src="images/for-whow/blogger.png" alt="Blogger">
+                    <img class="card__img" src="images/for-whow/blogger.jpg" alt="Blogger">
                 </div>
 
                 <div class="card">
                     <div class="title_card">Онлайн школы</div>
                     <div class="subtitle_card">Лид магниты, и приглашения на вебинар выдавайте за подписку.</div>
-                    <img class="card_img_school" src="images/for-whow/school.png" alt="School">
+                    <img class="card__img card__img-third" src="images/for-whow/expert.jpg" alt="School">
                 </div>
 
                 <div class="card">
                     <div class="title_card">Эксперты</div>
                     <div class="subtitle_card">Выдавайте полезные материалы, презентации только вашим подписчикам.</div>
-                    <img class="card_img_expert" src="images/for-whow/expert.png" alt="Expert">
+                    <img class="card__img card__img-second" src="images/header-lamp.jpg" alt="Expert">
                 </div>
             </div>
         </div>
-        <!----------------------------WHAT IS---------------------------->
-        <div class="what_is">
-            <div class="what_is_text">В чём смысл</div>
+        <div class="custom-shape-divider-top-1619970393">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <!----------------------------Tariffs---------------------------->
+    <section class="tariffs" id="tariffs">
+
+        <div class="text_tariffs">ХАРАКТЕРИСТИКИ И ЦЕНЫ</div>
+
+        <div class="tariffs__inner">
+            <div class="tariffs_cards">
+                <div class="tariffs_card_all">
+                    <img class="tariffs_card_img tariffs_card_img-first" src="images/ledlogo2.png" alt="Торшер">
+                    <div class="title_tariffs_card">S <span class="tariffs__price">50см.</span></div>
+                    <div class="price_tariffs_card">
+                        <span>110</span>
+                        <span class="tariffs__price">р.</span>
+                    </div>
+                    <div class="tariffs_included_card">
+                        <ul class="list_included">
+                            <li class="item_included">50 см.</li>
+                            <li class="item_included">16 млн. цветов</li>
+                            <li class="item_included">300+ режимов свечения</li>
+                            <li class="item_included">Статичное свечение</li>
+                            <li class="item_included">Регулировка яркости</li>
+                            <li class="item_included">Регулировка скорости режима</li>
+                            <li class="item_included">Пульт в комплекте</li>
+                        </ul>
+                    </div>
+                    <a href="#"><button class="btn_tariffs_card">Купить</button></a>
+                </div>
+
+                <div class="tariffs_card_all">
+                    <img class="tariffs_card_img tariffs_card_img-second" src="images/ledlogo2.png" alt="Торшер">
+                    <div class="title_tariffs_card">M <span class="tariffs__price">100см.</span></div>
+                    <div class="price_tariffs_card">
+                        <span>130</span>
+                        <span class="tariffs__price">р.</span>
+                    </div>
+                    <div class="tariffs_included_card">
+                        <ul class="list_included">
+                            <li class="item_included">100 см.</li>
+                            <li class="item_included">16 млн. цветов</li>
+                            <li class="item_included">300+ режимов свечения</li>
+                            <li class="item_included">Статичное свечение</li>
+                            <li class="item_included">Регулировка яркости</li>
+                            <li class="item_included">Регулировка скорости режима</li>
+                            <li class="item_included">Пульт в комплекте</li>
+                        </ul>
+                    </div>
+                    <a href="#"><button class="btn_tariffs_card">Купить</button></a>
+                </div>
+
+                <div class="tariffs_card_all">
+                    <img class="tariffs_card_img tariffs_card_img-third" src="images/ledlogo2.png" alt="Торшер">
+                    <div class="title_tariffs_card">L <span class="tariffs__price">150см.</span></div>
+                    <div class="price_tariffs_card">
+                        <span>150</span>
+                        <span class="tariffs__price">р.</span>
+                    </div>
+                    <div class="tariffs_included_card">
+                        <ul class="list_included">
+                            <li class="item_included">150 см.</li>
+                            <li class="item_included">16 млн. цветов</li>
+                            <li class="item_included">300+ режимов свечения</li>
+                            <li class="item_included">Статичное свечение</li>
+                            <li class="item_included">Регулировка яркости</li>
+                            <li class="item_included">Регулировка скорости режима</li>
+                            <li class="item_included">Пульт в комплекте</li>
+                        </ul>
+                    </div>
+                    <a href="#"><button class="btn_tariffs_card">Купить</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="custom-shape-divider-top-1620140853">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <!----------------------------WHAT IS---------------------------->
+    <section class="reasons">
+        <div class="container">
+            <div class="services__title">ОФОРМЛЕНИЕ ЗАКАЗА</div>
             <div class="what_is_cards">
                 <div class="what_is_card_all what_is_card_1">
                     <span class="what_is_card_number">1</span>
                     <div class="text_what_is_card">
-                        <div class="title_what_is_card">У вас есть</div>
-                        <div class="subtitle_what_is_card">Чек лист, Гайд, Инструкция, Лид магнит, трипваер.</div>
+                        <div class="title_what_is_card">Ознакомься</div>
+                        <div class="subtitle_what_is_card">Ознакомься с товаром</div>
                     </div>
                     <img class="what_is_card_img_all what_is_card_img" src="images/what-is/hand.png" alt="Рука">
                 </div>
@@ -132,8 +267,8 @@
                 <div class="what_is_card_all what_is_card_2">
                     <span class="what_is_card_number">2</span>
                     <div class="text_what_is_card">
-                        <div class="title_what_is_card">Вы делаете рекламу</div>
-                        <div class="subtitle_what_is_card">Своих материалов у себя в instagram в Facebook или у блогеров
+                        <div class="title_what_is_card">Выбери</div>
+                        <div class="subtitle_what_is_card">Выбери подходящий размер
                         </div>
                     </div>
                     <img class="what_is_card_img_all what_is_card_img" src="images/what-is/phone.png" alt="Телефон">
@@ -142,9 +277,8 @@
                 <div class="what_is_card_all what_is_card_3">
                     <span class="what_is_card_number">3</span>
                     <div class="text_what_is_card">
-                        <div class="title_what_is_card">Но подписчики не увеличиваются</div>
-                        <div class="subtitle_what_is_card">Они забирают ваши материалы, но к вам в подписчики instagram
-                            не добавляются. Вы никак заставитьих не можете подписаться на вас</div>
+                        <div class="title_what_is_card">Напиши</div>
+                        <div class="subtitle_what_is_card">Напиши нам в любой удобный для тебя мессенджер</div>
                     </div>
                     <img class="what_is_card_img_all what_is_card_img" src="images/what-is/man-1.png" alt="Человек">
                 </div>
@@ -152,9 +286,8 @@
                 <div class="what_is_card_all what_is_card_4">
                     <span class="what_is_card_number">4</span>
                     <div class="text_what_is_card">
-                        <div class="title_what_is_card">Лучший прогрев аудитории</div>
-                        <div class="subtitle_what_is_card">Происходит через социальные сети. Аудитория становится
-                            лояльна к более крупным покупкам</div>
+                        <div class="title_what_is_card">Спрашивай</div>
+                        <div class="subtitle_what_is_card">Задай нам все интересующие вопросы</div>
                     </div>
                     <img class="what_is_card_img_all what_is_card_img" src="images/what-is/hand-like.png" alt="Лайк">
                 </div>
@@ -162,9 +295,9 @@
                 <div class="what_is_card_all what_is_card_5">
                     <span class="what_is_card_number">5</span>
                     <div class="text_what_is_card">
-                        <div class="title_what_is_card">TELEPORT поможет</div>
-                        <div class="subtitle_what_is_card">С помощью сервиса вы создадите подписную страницу, которая
-                            может выдавать контент, за подписку на вас в instagram</div>
+                        <div class="title_what_is_card">Заказывай</div>
+                        <div class="subtitle_what_is_card">Сделай заказ и получи трек-номер, чтобы забрать товар в день
+                            приезда</div>
                     </div>
                     <img class="what_is_card_img_all what_is_card_img" src="images/what-is/man-2.png" alt="Человек">
                 </div>
@@ -172,77 +305,33 @@
                 <div class="what_is_card_all what_is_card_6">
                     <span class="what_is_card_number">6</span>
                     <div class="text_what_is_card">
-                        <div class="title_what_is_card">Получайте подписчиков</div>
-                        <div class="subtitle_what_is_card">Сервис подскажет с какой рекламы и с какого блогера пришли
-                            подписчики. Оптимизируйте рекламу и получайте больше клиентов</div>
+                        <div class="title_what_is_card">Забирай</div>
+                        <div class="subtitle_what_is_card">Забирай шикарный товар через 2-4 дня в отделении Белпочты
+                        </div>
                     </div>
                     <img class="what_is_card_img_all what_is_card_img" src="images/what-is/smile.png" alt="Смайлик">
                 </div>
             </div>
         </div>
-
-        <!----------------------------Tariffs---------------------------->
-        <div class="tariffs">
-
-            <div class="text_tariffs">Тарифы сервиса</div>
-
-            <div class="tariffs_cards">
-                <div class="tariffs_card_all tariffs_card_1">
-                    <img class="tariffs_card_img" src="images/tariffs/micro.png" alt="Камень">
-                    <div class="title_tariffs_card">MICRO</div>
-                    <div class="price_tariffs_card">
-                        <span>490&#x20bd</span>
-                        <span>месяц</span>
-                    </div>
-                    <div class="tariffs_included_card">
-                        <ul class="list_included">
-                            <li class="item_included">1 страница</li>
-                            <li class="item_included">Pixel Facebook</li>
-                            <li class="item_included">Аналитика</li>
-                        </ul>
-                    </div>
-                    <a href="#"><button class="btn_tariffs_card">Купить</button></a>
-                </div>
-
-                <div class="tariffs_card_all tariffs_card_2">
-                    <img class="tariffs_card_img" src="images/tariffs/nano.png" alt="Камень">
-                    <div class="title_tariffs_card">NANO</div>
-                    <div class="price_tariffs_card">
-                        <span>990&#x20bd</span>
-                        <span>месяц</span>
-                    </div>
-                    <div class="tariffs_included_card">
-                        <ul class="list_included">
-                            <li class="item_included">3 страницы</li>
-                            <li class="item_included">Pixel Facebook</li>
-                            <li class="item_included">Аналитика</li>
-                        </ul>
-                    </div>
-                    <a href="#"><button class="btn_tariffs_card">Купить</button></a>
-                </div>
-
-                <div class="tariffs_card_all tariffs_card_3">
-                    <img class="tariffs_card_img" src="images/tariffs/mega.png" alt="Камень">
-                    <div class="title_tariffs_card">MEGA</div>
-                    <div class="price_tariffs_card">
-                        <span>1490&#x20bd</span>
-                        <span>месяц</span>
-                    </div>
-                    <div class="tariffs_included_card">
-                        <ul class="list_included">
-                            <li class="item_included">10 страниц</li>
-                            <li class="item_included">Pixel Facebook</li>
-                            <li class="item_included">Аналитика</li>
-                        </ul>
-                    </div>
-                    <a href="#"><button class="btn_tariffs_card">Купить</button></a>
-                </div>
-            </div>
+        <div class="custom-shape-divider-top-1619908422">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
         </div>
+    </section>
 
-        <div class="scripts">
-
-            <div class="scripts_text">Сценарии использования</div>
+    <section class="scripts">
+        <div class="container">
+            <div class="services__title">Сценарии использования</div>
 
             <div class="scripts_content scripts_content_1">
                 <img src="images/scripts/blogger.png" alt="Блогер" class="scripts_bloggers_img">
@@ -309,9 +398,17 @@
                 </div>
             </div>
         </div>
+        <div class="custom-shape-divider-top-1620145095">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
 
-        <div class="questions">
-            <div class="questions_text">Частые вопросы</div>
+    <section class="questions" id="faq">
+        <div class="container">
             <div class="questions_img">
                 <svg width="274" height="275" viewBox="0 0 274 275" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="274" height="275">
@@ -393,11 +490,14 @@
                     </g>
                 </svg>
             </div>
+            <div class="questions__inner">
+                <div class="questions_text">Частые вопросы</div>
+            
             <div class="questions_accordion">
                 <div class="questions_active">
                     <div class="questions_active_container">
                         <div class="questions_number">01</div>
-                        <div class="questions_title">Как TELEPORT поможет мне и зачем это нужно?</div>
+                        <div class="questions_title">Где производятся ваши лампы?</div>
                     </div>
                     <div class="questions_open">
                         <div></div>
@@ -405,8 +505,7 @@
                     </div>
                 </div>
                 <div class="questions_content">
-                    <div class="questions_content_subtitle">Наш сервис поможет вам значительно снизить стоимость
-                        привлечения подписчика. Вы сэкономите ваш бюджет в 2-5 раз.</div>
+                    <div class="questions_content_subtitle">У нас собственное производство в Беларуси.</div>
                 </div>
             </div>
 
@@ -414,7 +513,7 @@
                 <div class="questions_active">
                     <div class="questions_active_container">
                         <div class="questions_number">02</div>
-                        <div class="questions_title">Это безопасно? Меня не заблокируют?</div>
+                        <div class="questions_title">Из какого материала сделаны торшеры?</div>
                     </div>
                     <div class="questions_open">
                         <div></div>
@@ -422,8 +521,8 @@
                     </div>
                 </div>
                 <div class="questions_content">
-                    <div class="questions_content_subtitle">Наш сервис поможет вам значительно снизить стоимость
-                        привлечения подписчика. Вы сэкономите ваш бюджет в 2-5 раз.</div>
+                    <div class="questions_content_subtitle">Наши Торшеры сделаны из европейского алюминия, покрашенного
+                        высококачественной порошковой краской.</div>
                 </div>
             </div>
 
@@ -431,7 +530,7 @@
                 <div class="questions_active">
                     <div class="questions_active_container">
                         <div class="questions_number">03</div>
-                        <div class="questions_title">Как быстро сервис проверяет подписался на меня человек или нет?
+                        <div class="questions_title">Доставка
                         </div>
                     </div>
                     <div class="questions_open">
@@ -440,8 +539,7 @@
                     </div>
                 </div>
                 <div class="questions_content">
-                    <div class="questions_content_subtitle">Наш сервис поможет вам значительно снизить стоимость
-                        привлечения подписчика. Вы сэкономите ваш бюджет в 2-5 раз.</div>
+                    <div class="questions_content_subtitle">Доставка осуществляется Белпочтой наложенным платежом.</div>
                 </div>
             </div>
 
@@ -449,7 +547,7 @@
                 <div class="questions_active">
                     <div class="questions_active_container">
                         <div class="questions_number">04</div>
-                        <div class="questions_title">Кому подходит наш сервис?</div>
+                        <div class="questions_title">Гарантия</div>
                     </div>
                     <div class="questions_open">
                         <div></div>
@@ -457,8 +555,7 @@
                     </div>
                 </div>
                 <div class="questions_content">
-                    <div class="questions_content_subtitle">Наш сервис поможет вам значительно снизить стоимость
-                        привлечения подписчика. Вы сэкономите ваш бюджет в 2-5 раз.</div>
+                    <div class="questions_content_subtitle">Мы предоставляем гарантию на все Торшеры - 90 дней.</div>
                 </div>
             </div>
 
@@ -466,7 +563,7 @@
                 <div class="questions_active">
                     <div class="questions_active_container">
                         <div class="questions_number">05</div>
-                        <div class="questions_title">Что будет с моей ссылкой, если я его не продлю?</div>
+                        <div class="questions_title">Что будет с моей посылкой, если она потеряется?</div>
                     </div>
                     <div class="questions_open">
                         <div></div>
@@ -474,8 +571,9 @@
                     </div>
                 </div>
                 <div class="questions_content">
-                    <div class="questions_content_subtitle">Наш сервис поможет вам значительно снизить стоимость
-                        привлечения подписчика. Вы сэкономите ваш бюджет в 2-5 раз.</div>
+                    <div class="questions_content_subtitle">В этом случае напишите нам в любую удобную для вас соцсеть и
+                        мы
+                        возместим полную стоимость.</div>
                 </div>
             </div>
 
@@ -496,9 +594,23 @@
                         привлечения подписчика. Вы сэкономите ваш бюджет в 2-5 раз.</div>
                 </div>
             </div>
+            </div>
         </div>
-
-    </div>
+        <div class="custom-shape-divider-top-1620145568">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <a href="#" class="btn">Заказать сейчас</a>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            Copyright ©2021 all rights reserved
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
