@@ -23,6 +23,9 @@ $(function(){
         }
       });
     }); */
+
+
+    
     function toggleSlide(item) {
       $(item).each(function (i) {
         $(this).on('click', function (e) {
@@ -36,9 +39,7 @@ $(function(){
     const burgerButton = document.querySelector('.burger_button');
     const burgerList = document.querySelector('.burger_list');
     
-    burgerButton.addEventListener('click', () => {
-        burgerList.classList.toggle('burger_list_toggle');
-    })
+
 });
 
     SmoothScroll({  // Scrolling Core
