@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YozieB</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+     <header class="header">
+        <div class="container">
+            <div class="header__mobile">
+                <a href="index.html" class="header__logo-hidden">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="index.html#products">Продукты</a></li>
+                        <li><a href="index.html#questions">FAQ</a></li>
+                        <li><a href="#">Чат Telegram</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Реселлеры</a></li>
+                    </ul>
+                </nav>
+                <div class="header__right">
+                    <a href="#" class="header__lang">
+                        RU
+                        <ul class="header__lang-list">
+                            <li>UA</li>
+                            <li>EN</li>
+                            <li>PL</li>
+                        </ul>
+                    </a>
+                    <a href="javascript:void(0);" data-modal="order" class="header__btn">
+                        скачать лаунчер
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <div class="section__title">
+                    О нас
+                </div>
+                <div class="about__info">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+                </div>
+                <a href="#" class="header__btn about__btn">
+                    К товарам
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="footer__logo">
+                    <img src="images/footer-logo.svg" alt="">
+                </a>
+                <div class="footer__item">
+                    <span>Все права защищены 2015-2021</span>
+                    <a class="footer__link" data-modal="license" href="javascript:void(0);">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay">
+        <div class="modal" id="license">
+            <div class="modal__wrapper">
+                <a href="javascript:void(0);">
+                    <img class="modal__close" src="images/close.svg" alt="">
+                </a>
+                <div class="section__title">
+                    Лицензионное соглашение
+                </div>
+                <div class="modal__descr">
+                    <ul class="license__list">
+                        <li>
+                            - Приобретение данного продукта заведомо трактуется как согласие покупателя с лицензионным
+                            соглашением меж ним и посредником-разработчиком.
+
+                        </li>
+                        <li>
+                            - Поддержка осуществляется бесплатно на протяжении всего срока поддержки продукта
+                            разработчиком, при условии, что проблема связана с некорректной работой именно нашей
+                            продукции.
+                        </li>
+                        <li>
+                            - Возврат средств возможен лишь в случае неработоспособности нашей продукции на вашей
+                            системе и с отсутствием возможности устранения оной ошибки. Возврат средств производится в
+                            день приобретения вами продукции.
+                        </li>
+                        <li>
+                            - Если обновление продукции занимает более 24-х часов производится компенсация утраченного
+                            времени активации, в обратном случае компенсация не предусмотрена.
+                        </li>
+                        <li>
+                            Следующие действия приводят к деактивации ключа:
+                        </li>
+                        <li>
+                            Попытка(-и) отладки(дешифровки, декомпиляции) продукции предлагаемой нами.
+                        </li>
+                        <li>
+                            Перевязка ключа производится бесплатно в первые два дня после покупки подписки в остальных
+                            случая берется плата (Обращение к администратору)
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal__btn-inner">
+                    <a href="javascript:void(0);" class="header__btn modal__btn">Закрыть</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal__order" id="order">
+            <div class="modal__wrapper">
+                <a href="javascript:void(0);">
+                    <img class="modal__close" src="images/close.svg" alt="">
+                </a>
+                <div class="section__title">
+                    Инструкция по установке
+                </div>
+                <div class="modal__descr">
+                    <span>Внимание:</span> если загрузка не начнется автоматически, пожалуйста, <a href="#">нажмите
+                        здесь.</a>
+                </div>
+                <div class="modal__inner">
+                    <div class="modal__item">
+                        <img src="images/download.svg" alt="">
+                        <div class="modal__text">
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                            является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                            безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+                            для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять
+                            веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                            публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
+                            программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem
+                            Ipsum.
+                        </div>
+                    </div>
+                    <div class="modal__item">
+                        <img src="images/download.svg" alt="">
+                        <div class="modal__text">
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                            является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                            безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+                            для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять
+                            веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                            публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
+                            программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem
+                            Ipsum.
+                        </div>
+                    </div>
+                    <div class="modal__item">
+                        <img src="images/download.svg" alt="">
+                        <div class="modal__text">
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                            является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                            безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+                            для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять
+                            веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                            публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
+                            программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem
+                            Ipsum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
