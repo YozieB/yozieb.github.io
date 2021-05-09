@@ -11,10 +11,10 @@
 </head>
 
 <body>
-     <header class="header">
+    <header class="header animate__animated wow animate__fadeInDown">
         <div class="container">
             <div class="header__mobile">
-                <a href="index.html" class="header__logo-hidden">
+                <a href="#" class="header__logo-hidden">
                     <img src="images/logo.svg" alt="">
                 </a>
                 <div class="hamburger">
@@ -29,31 +29,64 @@
                 </a>
                 <nav class="header__menu">
                     <ul class="header__menu-list">
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="index.html#products">Продукты</a></li>
-                        <li><a href="index.html#questions">FAQ</a></li>
-                        <li><a href="#">Чат Telegram</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
-                        <li><a href="#">Реселлеры</a></li>
+                        <li class="header__menu-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#products">Продукты</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#questions">FAQ</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Чат Telegram</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="header__dropdown-main">
+                            Реселлеры
+                        <ul class="header__dropdown">
+                            <li>
+                                <a href="#">Alexander</a>
+                                <a href="#">
+                                    <img src="images/telegram-dropdown.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/discord-dropdown.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="header__dropdown-line"></li>
+                            <li>
+                                <a href="#">Alexander</a>
+                                <a href="#">
+                                    <img src="images/telegram-dropdown.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/discord-dropdown.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div class="header__right">
-                    <a href="#" class="header__lang">
+                    <div href="#" class="header__lang">
                         RU
                         <ul class="header__lang-list">
-                            <li>UA</li>
-                            <li>EN</li>
-                            <li>PL</li>
+                            <li><a href="#">UA</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">PL</a></li>
                         </ul>
-                    </a>
-                    <a href="javascript:void(0);" data-modal="order" class="header__btn">
+                    </div>
+                    <a href="javascript:void(0);" class="header__btn" data-modal="order">
                         скачать лаунчер
                     </a>
                 </div>
             </div>
         </div>
     </header>
-    <section class="contacts">
+    <section class="contacts animate__animated wow animate__zoomIn">
         <div class="container">
             <div class="contacts__inner">
                 <div class="section__title">
@@ -70,7 +103,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer animate__animated wow animate__fadeInUp">
         <div class="container">
             <div class="footer__inner">
                 <a href="#" class="footer__logo">

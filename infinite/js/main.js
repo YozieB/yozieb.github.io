@@ -1,7 +1,7 @@
 $(function () {
+  //SLIDERS
   window.addEventListener('load', () => {
     const swiper = new Swiper('.main', {
-      // Optional parameters
       direction: 'horizontal',
       loop: true,
       slidesPerView: 4,
@@ -11,7 +11,6 @@ $(function () {
         delay: 2000,
         disableOnInteraction: false,
       },
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next-main',
         prevEl: '.swiper-button-prev-main',
@@ -34,7 +33,6 @@ $(function () {
       },
     });
     const swiper2 = new Swiper('.supfer', {
-      // Optional parameters
       direction: 'horizontal',
       loop: true,
       slidesPerView: 4,
@@ -44,7 +42,6 @@ $(function () {
         delay: 2000,
         disableOnInteraction: false,
       },
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next-supfer',
         prevEl: '.swiper-button-prev-supfer',
@@ -67,8 +64,8 @@ $(function () {
       },
     });
 
-    var swiper3 = new Swiper(".product__thumbs", {
-      spaceBetween: 6,
+    const swiper3 = new Swiper(".product__thumbs", {
+      spaceBetween: 15,
       slidesPerView: 3,
       direction: 'vertical',
       allowSlideNext: false,
@@ -80,11 +77,11 @@ $(function () {
         1: {
           direction: 'horizontal',
         },
-        480: {
+        540: {
         },
       },
     });
-    var swiper4 = new Swiper(".product__gallery", {
+    const swiper4 = new Swiper(".product__gallery", {
       spaceBetween: 12,
       slidePerView: 1,
       effect: 'fade',
@@ -106,7 +103,7 @@ $(function () {
     });
     return false;
   });
-
+  //QUESTIONS MAIN PAGE
   function toggleSlide(item) {
     $(item).each(function (i) {
       $(this).on('click', function (e) {
@@ -118,7 +115,7 @@ $(function () {
   };
   toggleSlide('.questions__active');
 
-
+//POPUPS
   $('[data-modal=license]').on('click', function () {
     $('.overlay, #license').fadeIn('slow');
   });
@@ -133,7 +130,7 @@ $(function () {
   });
 
 
-
+//TABS
   $('ul.product__tabs').on('click', 'li:not(.product__tab_active)', function () {
     $(this)
       .addClass('product__tab_active').siblings().removeClass('product__tab_active')
@@ -145,9 +142,42 @@ $(function () {
       .addClass('product__info-tab_active').siblings().removeClass('product__info-tab_active')
       .closest('section.product').find('div.product__info-content').removeClass('product__info-content_active').eq($(this).index()).addClass('product__info-content_active');
   });
+
+  SmoothScroll({  // Scrolling Core
+    animationTime    : 400, // [ms]
+    stepSize         : 100, // [px]
+
+    // Acceleration
+    accelerationDelta : 50,  // 50
+    accelerationMax   : 3,   // 3
+
+    // Keyboard Settings
+    keyboardSupport   : true,  // option
+    arrowScroll       : 50,    // [px]
+
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm   : true,
+    pulseScale       : 4,
+    pulseNormalize   : 1,
+
+    // Other
+    touchpadSupport   : false, // ignore touchpad by default
+    fixedBackground   : true, 
+    excluded          : ''    });
+
+
+//Animations
+
+new WOW(
+    {
+        mobile: false,
+    }
+).init();
+
 });
 
-
+//BURGER MENU
 window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.header__inner'),
     menuItem = document.querySelectorAll('.header__menu-item'),
