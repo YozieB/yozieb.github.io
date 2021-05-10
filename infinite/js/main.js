@@ -6,9 +6,8 @@ $(function () {
       loop: true,
       slidesPerView: 4,
       spaceBetween: 44,
-      mousewheel: true,
       autoplay: {
-        delay: 2000,
+        delay: 3500,
         disableOnInteraction: false,
       },
       navigation: {
@@ -37,9 +36,8 @@ $(function () {
       loop: true,
       slidesPerView: 4,
       spaceBetween: 44,
-      mousewheel: true,
       autoplay: {
-        delay: 2000,
+        delay: 3500,
         disableOnInteraction: false,
       },
       navigation: {
