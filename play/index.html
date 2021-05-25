@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play</title>
+    <title>GameLabs - Магазин игровых проектов</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header animate__animated wow animate__fadeInDown">
         <div class="container">
             <div class="header__inner">
                 <div class="header__left">
@@ -21,13 +22,34 @@
                     <nav class="header__menu">
                         <ul class="header__menu-list">
                             <li><a href="#">Главная</a></li>
-                            <li><a href="#">Наши товары</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#product">Наши товары</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="header__right">
+                    <a href="javascript:void(0);" class="header__market" data-modal="market">
+                        <img src="images/market.svg" alt="">
+                    </a>
+                    <a href="#" class="header__btn btn">
+                        К товарам
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__mobile">
+                    <nav class="header__menu header__menu-mobile">
+                        <ul class="header__menu-list">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#product">Наши товары</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                        </ul>
+                    </nav>
                     <a href="javascript:void(0);" class="header__market" data-modal="market">
                         <img src="images/market.svg" alt="">
                     </a>
@@ -41,44 +63,47 @@
     <section class="about">
         <div class="container">
             <div class="about__inner">
-                <div class="about__info">
+                <div class="about__info animate__animated wow animate__fadeInLeft">
                     <h1 class="about__info-title">
                         <span>Привет!</span> 👋 <br>
                         Хочешь открыть игровой проект?
                     </h1>
                     <div class="about__info-descr">
-                        На нашей сайте представлен хороший выбор игровых проектов для вас!
+                        Мы поможем тебе в этом! <br>
+                        Переходи прямо по кнопке ниже к нашим товарам!
                     </div>
                     <a href="#" class="about__btn btn">
                         Подробнее
                     </a>
                 </div>
-                <div class="about__img animate__animated wow animate__pulse" data-wow-duration="3s"
-                    data-wow-iteration="infinite">
-                    <img src="images/about-top-left.png"
-                        class="about__img-topleft animate__animated wow animate__shakeY" alt="JoyStick"
-                        data-wow-duration="19s" data-wow-iteration="infinite">
-                    <img src="images/about-bottom-left.png"
-                        class="about__img-bottomleft animate__animated wow animate__headShake" data-wow-duration="4s"
-                        data-wow-iteration="infinite" alt="JoyStick">
-                    <img src="images/about-bottom-left.png"
-                        class="about__img-topright animate__animated wow animate__wobble" data-wow-iteration="infinite"
-                        data-wow-duration="25s" alt="JoyStick">
-                    <img src="images/about-bottom-right.png"
-                        class="about__img-bottomright animate__animated wow animate__shakeX"
-                        data-wow-iteration="infinite" data-wow-duration="19s" alt="JoyStick">
+                <div class="about__img-wrapper animate__animated wow animate__fadeInRight">
+                    <div class="about__img animate__animated wow animate__pulse" data-wow-duration="3s"
+                        data-wow-iteration="infinite">
+                        <img src="images/about-top-left.png"
+                            class="about__img-topleft animate__animated wow animate__shakeY" alt="JoyStick"
+                            data-wow-duration="19s" data-wow-iteration="infinite">
+                        <img src="images/about-bottom-left.png"
+                            class="about__img-bottomleft animate__animated wow animate__headShake"
+                            data-wow-duration="4s" data-wow-iteration="infinite" alt="JoyStick">
+                        <img src="images/about-bottom-left.png"
+                            class="about__img-topright animate__animated wow animate__wobble"
+                            data-wow-iteration="infinite" data-wow-duration="25s" alt="JoyStick">
+                        <img src="images/about-bottom-right.png"
+                            class="about__img-bottomright animate__animated wow animate__shakeX"
+                            data-wow-iteration="infinite" data-wow-duration="19s" alt="JoyStick">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="product">
+    <section class="product" id="product">
         <img src="images/product-right.png" class="product__img-right" alt="">
         <img src="images/product-right.png" class="product__img-left" alt="">
         <img src="images/product-right-small.png" class="product__img-right-small" alt="">
         <div class="container">
-            <div class="section__title">Наши товары</div>
+            <div class="section__title animate__animated wow animate__fadeInUp">Наши товары</div>
             <div class="product__inner">
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -106,7 +131,7 @@
                         1 999.00 ₽
                     </div>
                 </div>
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn" data-wow-delay=".2s">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -134,7 +159,7 @@
                         1 999.00 ₽
                     </div>
                 </div>
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn" data-wow-delay=".3s">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -162,7 +187,7 @@
                         1 999.00 ₽
                     </div>
                 </div>
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn" data-wow-delay=".4s">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -190,7 +215,7 @@
                         1 999.00 ₽
                     </div>
                 </div>
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn" data-wow-delay=".5s">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -218,7 +243,7 @@
                         1 999.00 ₽
                     </div>
                 </div>
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn" data-wow-delay=".6s">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -246,7 +271,7 @@
                         1 999.00 ₽
                     </div>
                 </div>
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn" data-wow-delay=".7s">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -274,7 +299,7 @@
                         1 999.00 ₽
                     </div>
                 </div>
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn" data-wow-delay=".8s">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -304,13 +329,13 @@
                 </div>
             </div>
     </section>
-    <section class="services product">
+    <section class="services product" id="services">
         <img src="images/product-right-small.png" class="product__img-right-small" alt="">
         <img src="images/reviews-right.png" alt="" class="reviews__img-right">
         <div class="container">
-            <div class="section__title">Наши услуги</div>
+            <div class="section__title animate__animated wow animate__fadeInUp">Наши услуги</div>
             <div class="product__inner">
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -338,7 +363,7 @@
                         999.00 ₽
                     </div>
                 </div>
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn" data-wow-delay=".2s">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -366,7 +391,7 @@
                         999.00 ₽
                     </div>
                 </div>
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn" data-wow-delay=".3s">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -394,7 +419,7 @@
                         999.00 ₽
                     </div>
                 </div>
-                <div class="product__card">
+                <div class="product__card animate__animated wow animate__zoomIn" data-wow-delay=".4s">
                     <div class="product__card-img">
                         <div class="swiper-container-product swiper-container">
                             <div class="swiper-wrapper">
@@ -425,14 +450,14 @@
             </div>
         </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <img src="images/reviews-right.png" alt="" class="reviews__img-right">
         <div class="container">
             <div class="reviews__wrapper">
-                <div class="section__title">
+                <div class="section__title animate__animated wow animate__fadeInUp">
                     Отзывы наших клиентов
                 </div>
-                <div class="swiper-container swiper-container-reviews">
+                <div class="swiper-container swiper-container-reviews animate__animated wow animate__fadeInLeft">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="swiper-slide__inner">
@@ -443,11 +468,15 @@
                                     </div>
                                     <div class="reviews__text">
                                         Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
-                                        Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то
-                                        время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
-                                        используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
+                                        Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В
+                                        то
+                                        время некий безымянный печатник создал большую коллекцию размеров и форм
+                                        шрифтов,
+                                        используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно
+                                        пережил
                                         без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его
-                                        популяризации в новое время послужили публикация листов Letraset с образцами Lorem
+                                        популяризации в новое время послужили публикация листов Letraset с образцами
+                                        Lorem
                                         Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа
                                         Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
                                     </div>
@@ -463,11 +492,15 @@
                                     </div>
                                     <div class="reviews__text">
                                         Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
-                                        Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то
-                                        время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
-                                        используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
+                                        Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В
+                                        то
+                                        время некий безымянный печатник создал большую коллекцию размеров и форм
+                                        шрифтов,
+                                        используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно
+                                        пережил
                                         без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его
-                                        популяризации в новое время послужили публикация листов Letraset с образцами Lorem
+                                        популяризации в новое время послужили публикация листов Letraset с образцами
+                                        Lorem
                                         Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа
                                         Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
                                     </div>
@@ -492,81 +525,84 @@
         </div>
     </footer>
     <div class="market" id="market">
-            <div class="market__inner">
-                <div class="market__top">
-                    <div class="market__title">
-                        Корзина
-                    </div>
-                    <a class="market__close" href="javascript:void(0);"><img src="images/market-close.svg" alt=""></a>
-                    <div class="market__card">
-                        <div class="market__card-info">
-                            <div class="market__card-icon">
-                                
-                            </div>
-                            <div class="market__card-descr">
-                                Игровой проект по CS:GO CRASH
-                            </div>
-                        </div>
-                        <a href="#" class="market__card-trash">
-                            <img src="images/trash.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="market__card">
-                        <div class="market__card-info">
-                            <div class="market__card-icon">
-                                
-                            </div>
-                            <div class="market__card-descr">
-                                Игровой проект по CS:GO CRASH
-                            </div>
-                        </div>
-                        <a href="#" class="market__card-trash">
-                            <img src="images/trash.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="market__card">
-                        <div class="market__card-info">
-                            <div class="market__card-icon">
-                                
-                            </div>
-                            <div class="market__card-descr">
-                                Игровой проект по CS:GO CRASH
-                            </div>
-                        </div>
-                        <a href="#" class="market__card-trash">
-                            <img src="images/trash.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="market__card">
-                        <div class="market__card-info">
-                            <div class="market__card-icon">
-                                
-                            </div>
-                            <div class="market__card-descr">
-                                Игровой проект по CS:GO CRASH
-                            </div>
-                        </div>
-                        <a href="#" class="market__card-trash">
-                            <img src="images/trash.svg" alt="">
-                        </a>
-                    </div>
+        <div class="market__inner">
+            <div class="market__top">
+                <div class="market__title">
+                    Корзина
                 </div>
-                <div class="market__bottom">
-                    <div class="market__word">
-                        Итог
-                    </div>
-                    <div class="market__price">
-                        2 999.00 ₽
-                    </div>
-                    <form action="#">
-                        <div class="market__email">
-                            <img class="market__input-img" src="images/input.svg" alt="">
-                            <input class="market__input" type="email" placeholder="Введите E-mail">
+                <a class="market__close" href="javascript:void(0);"><img src="images/market-close.svg" alt=""></a>
+                <div class="market__card">
+                    <div class="market__card-info">
+                        <div class="market__card-icon">
+
                         </div>
-                        <button class="market__btn btn" type="submit">Отправить</button>
-                    </form>
+                        <div class="market__card-descr">
+                            Игровой проект по CS:GO CRASH
+                        </div>
+                    </div>
+                    <a href="#" class="market__card-trash">
+                        <img src="images/trash.svg" alt="">
+                    </a>
+                </div>
+                <div class="market__card">
+                    <div class="market__card-info">
+                        <div class="market__card-icon">
+
+                        </div>
+                        <div class="market__card-descr">
+                            Игровой проект по CS:GO CRASH
+                        </div>
+                    </div>
+                    <a href="#" class="market__card-trash">
+                        <img src="images/trash.svg" alt="">
+                    </a>
+                </div>
+                <div class="market__card">
+                    <div class="market__card-info">
+                        <div class="market__card-icon">
+
+                        </div>
+                        <div class="market__card-descr">
+                            Игровой проект по CS:GO CRASH
+                        </div>
+                    </div>
+                    <a href="#" class="market__card-trash">
+                        <img src="images/trash.svg" alt="">
+                    </a>
+                </div>
+                <div class="market__card">
+                    <div class="market__card-info">
+                        <div class="market__card-icon">
+
+                        </div>
+                        <div class="market__card-descr">
+                            Игровой проект по CS:GO CRASH
+                        </div>
+                    </div>
+                    <a href="#" class="market__card-trash">
+                        <img src="images/trash.svg" alt="">
+                    </a>
                 </div>
             </div>
+            <div class="market__bottom">
+                <div class="market__word">
+                    Итог
+                </div>
+                <div class="market__price">
+                    2 999.00 ₽
+                </div>
+                <form action="#">
+                    <div class="market__email">
+                        <img class="market__input-img" src="images/input.svg" alt="">
+                        <input class="market__input" type="email" placeholder="Введите E-mail">
+                    </div>
+                    <button class="market__btn btn" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="preloader">
+        <img src="images/preloader.gif" alt="">
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>
