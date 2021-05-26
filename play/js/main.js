@@ -50,6 +50,20 @@ $(function () {
         scrollbar: {
             el: '.swiper-scrollbar',
         },
+        breakpoints: {
+            1: {
+                slidesPerView: 1.1,
+            },
+            380: {
+                slidesPerView: 1.1,
+            },
+            768: {
+                slidesPerView: 2.2,
+            },
+            900: {
+                slidesPerView: 3.2,
+            }
+        },
 
     });
     const swiperItemMain = new Swiper('.swiper-item-main', {
