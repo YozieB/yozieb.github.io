@@ -42,6 +42,27 @@ $(function () {
             }
         },
     });
+    const swiperItemThumbs = new Swiper('.swiper-item-thumbs', {
+        slidesPerView: 3.2,
+        spaceBetween: 10,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+
+    });
+    const swiperItemMain = new Swiper('.swiper-item-main', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        thumbs: {
+            swiper: swiperItemThumbs,
+        },
+    });
+
+
+
+
     SmoothScroll({  // Scrolling Core
         animationTime: 600, // [ms]
         stepSize: 100, // [px]
@@ -86,7 +107,7 @@ $(function () {
     });
     $('.hamburger').click(function () {
         $('.header__mobile').toggleClass('header__mobile-active');
-        $('.hamburger').toggleClass('hamburger-active')
+        $('.hamburger').toggleClass('hamburger-active');
     });
     //preloader
 
@@ -99,7 +120,4 @@ $(function () {
 $('a[href*=\\#]').on('click', function (event) {
     event.preventDefault();
     $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
-
-
-
 });
