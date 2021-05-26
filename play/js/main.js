@@ -45,8 +45,8 @@ $(function () {
     const swiperItemThumbs = new Swiper('.swiper-item-thumbs', {
         slidesPerView: 3.2,
         spaceBetween: 10,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
+        observer: true,
+        observeParents: true,
         scrollbar: {
             el: '.swiper-scrollbar',
         },
