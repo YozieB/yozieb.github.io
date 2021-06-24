@@ -82,6 +82,7 @@ SmoothScroll({  // Scrolling Core
     observeParents: true,
     scrollbar: {
         el: '.swiper-scrollbar',
+        draggable: true,
     },
     breakpoints: {
         1: {
