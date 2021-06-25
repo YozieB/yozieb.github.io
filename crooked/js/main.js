@@ -1,5 +1,8 @@
 $(function(){
 
+  //mixitup
+
+  let mixer = mixitup('.filter__wrapper');
   //questions script
   function toggleSlide(item) {
     $(item).each(function (i) {
