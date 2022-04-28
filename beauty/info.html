@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Бьюти</title>
+	<meta name="description" content="описание">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<link rel="icon" href="favicon.png">
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="libs/choices/choices.min.css">
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.1/nouislider.min.css">
+
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-top">
+				<div class="container">
+					<div class="header-wrap">
+						<div class="header-left">
+
+							<div class="header-select select">
+								<select name="Язык" class="select-one">
+								</select>
+							</div>
+
+							<div class="header-list">
+								<ul>
+									<li><a href="#">Помощь</a></li>
+								</ul>
+							</div>
+
+							<a class="header__tel" href="tel:+7 800 550 95 96">
+								<img src="img/whatsapp.svg">
+								+7 800 550 95 96
+							</a>
+
+						</div>
+						<div class="header-right">
+							<div class="header-topmenu">
+								<ul>
+									<li><a href="#">Доставка</a></li>
+									<li><a href="#">Возврат</a></li>
+									<li><a href="#">Оплата</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-middle">
+				<div class="container">
+					<div class="header-wrap">
+						<div class="header-left">
+							<div class="header-menuwrap menuwrap">
+								<div class="menuwrap-icon">
+
+									<div class="hamburger" id="hamburger-1">
+										<span class="line"></span>
+										<span class="line"></span>
+										<span class="line"></span>
+									</div>
+
+								</div>
+								Меню
+							</div>
+
+							<div class="menuabs">
+								<ul>
+									<li><a href="#">Уход за лицом</a></li>
+									<li><a href="#">Уход за телом</a></li>
+									<li><a href="#">Уход за волосами</a></li>
+									<li><a href="#">Гигиена</a></li>
+									<li><a href="#">Мейкап</a></li>
+								</ul>
+							</div>
+
+							<div class="header-logo">
+								<a href="/">
+									<img class="header-logo__desk" src="img/logo.svg" alt="">
+									<img class="header-logo__mob" src="img/logomob.svg" alt="">
+								</a>
+							</div>
+
+							<div class="header-search search">
+								<input type="text" class="search-input" placeholder="Поиск по сайту">
+								<div class="close-search"></div>
+								<button type="submit" class="search-button">
+									<img src="img/search.svg" alt="">
+								</button>
+							</div>
+
+						</div>
+
+						<div class="header-right">
+							<div class="header-card">
+								<a class="header-card__login" href="#">
+									<img src="img/login.svg" alt="">
+									Войти
+								</a>
+								<a class="header-card__card" href="#">
+									<img src="img/card.svg" alt="">
+									Корзина <span>( 99 )</span>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container">
+					<div class="header-menuhead">
+						<ul>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Новинки</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Beauty Box</a></li>
+							<li><a href="#">Outlet</a></li>
+							<li><a href="#">Блог</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="info">
+				<div class="container">
+					<div class="info__wrapper">
+						<div class="info__title">Доставка</div>
+						<div class="info__descr">
+							<div class="info__descr-item">
+								<div class="info__descr-title">Курьером по Москве</div>
+								<p class="info__descr-text">На следующий день после заказа с 12:00 до 19:00. При заказе
+									до 12:00 возможна доставка в тот же день.</p>
+								<div class="info__descr-title">300 ₽</div>
+							</div>
+							<div class="info__descr-item">
+								<div class="info__descr-title">CDEK, BoxBerry и Почта России</div>
+								<p class="info__descr-text">Доставляем в любой город России, где есть пункт СДЭК,
+									BoxBerry или Почты России</p>
+								<div class="info__descr-title no-margin">Точная сумма доставки доступна в корзине</div>
+							</div>
+						</div>
+					</div>
+					<div class="info__wrapper">
+						<div class="info__title">Оплата</div>
+						<div class="info__descr">
+							<div class="info__descr-item">
+								<div class="info__descr-title">Наличными</div>
+								<p class="info__descr-text">Курьеру при получении</p>
+							</div>
+							<div class="info__descr-item">
+								<div class="info__descr-title">Картой</div>
+								<p class="info__descr-text">Mastercard, VISA, МИР</p>
+							</div>
+							<div class="info__descr-item">
+								<div class="info__descr-title">Безналичный расчет</div>
+								<p class="info__descr-text">Для юридических лиц</p>
+							</div>
+						</div>
+					</div>
+					<div class="info__wrapper">
+						<div class="info__title">Возврат</div>
+						<div class="info__descr">
+							<div class="info__descr-item">
+								<div class="info__descr-title">Возврат парфюмерно-косметических товаров надлежащего
+									качества после оплаты покупки невозможен</div>
+								<p class="info__descr-text">Обращаем внимание, что возврат парфюмерно-косметических
+									товаров надлежащего качества после оплаты покупки невозможен согласно Постановлению
+									Правительства РФ от 19.01.1998 N 55 (ред. от 16.05.2020) "Об утверждении Правил
+									продажи отдельных видов товаров, перечня товаров длительного пользования, на которые
+									не распространяется требование покупателя о безвозмездном предоставлении ему на
+									период ремонта или замены аналогичного товара, и перечня непродовольственных товаров
+									надлежащего качества, не подлежащих возврату или обмену на аналогичный товар других
+									размера, формы, габарита, фасона, расцветки или комплектации" и Постановления
+									Правительства РФ от 11.07.2020 N 1036.</p>
+							</div>
+							<div class="info__descr-item">
+								<div class="info__descr-title">Когда возврат возможен</div>
+								<p class="info__descr-text">Возврат средств возможен только в случае обнаружения наличия
+									заводского или механического брака. Обращаем ваше внимание на то, что после
+									получения оплаченного заказа в пунктах выдачи и желания заявить о возврате,
+									необходимо обратиться к сотрудникам интернет магазина и получить адрес склада для
+									возврата, в противном случае компания не получит вашу посылку и возврат будет
+									невозможен. Мы рекомендуем сохранять упаковку товара.</p>
+							</div>
+							<div class="info__descr-item">
+								<div class="info__descr-title">Возврат товара ненадлежащего качества</div>
+								<p class="info__descr-text">Если Вы обнаружили, что в полученном заказе оказался товар с
+									заводским или механическим браком, следуйте указанной инструкции и мы в самые
+									оперативные сроки свяжемся с вами и урегулируем сложившуюся ситуацию.</p>
+								<ul class="info__descr-list">
+									<li class="info__descr-list-item">Укажите номер вашего заказа</li>
+									<li class="info__descr-list-item">Укажите артикул товара</li>
+									<li class="info__descr-list-item">Опишите характер и тип брака</li>
+									<li class="info__descr-list-item">Приложите фотографии продукции</li>
+									<li class="info__descr-list-item">Отправьте письмо на почту</li>
+								</ul>
+							</div>
+							<div class="info__descr-item">
+								<div class="info__descr-title">Порядок и способы возврата</div>
+								<p class="info__descr-text no-margin">Возврат денежных средств покупателю выполняется в
+									соответствии с тем способом оплаты, который был выбран в корзине при оформлении
+									заказа, а так же.</p>
+								<p class="info__descr-text no-margin">Банковским переводом на карту . Для возврата на
+									банковскую
+									карту необходимо уточнить ее реквизиты и данные о владельце.</p>
+								<p class="info__descr-text no-margin">Безналичный расчет. В этом случае необходимо
+									отправить на
+									почту письмо с темой «возврат» и указать следующую информацию:</p>
+								<ul class="info__descr-list">
+									<li class="info__descr-list-item">Наименование банка</li>
+									<li class="info__descr-list-item">Расчетный счет</li>
+									<li class="info__descr-list-item">Корреспондентский счет</li>
+									<li class="info__descr-list-item">ИНН банка</li>
+									<li class="info__descr-list-item">БИК банка</li>
+									<li class="info__descr-list-item">Лицевой счет и номер карты</li>
+									<li class="info__descr-list-item">ФИО (реквизиты должны быть на имя заказчика)</li>
+								</ul>
+							</div>
+							<div class="info__descr-item">
+								<div class="info__descr-title">Заказ вернулся на склад отправителя</div>
+								<p class="info__descr-text">В случае, если Вы не смогли забрать заказ по личным
+									обстоятельствам и приняли решение от него отказаться, то от суммы заказа будет
+									вычислена стоимость за обратную доставку</p>
+								<p class="info__descr-text">В случае, если Вы не смогли забрать свой заказ по личным
+									обстоятельствам и приняли решение получить заказ повторно, то Вам необходимо будет
+									оплатить расходы по доставке (по вопросам, как оплатить доставку можно обратиться на
+									почту</p>
+							</div>
+							<div class="info__descr-item">
+								<div class="info__descr-title">Контакты</div>
+								<p class="info__descr-text no-margin">ООО "БЬЮТИ ФОРС"</p>
+								<p class="info__descr-text no-margin">ИНН 9710016280</p>
+								<p class="info__descr-text no-margin">ОГРН 1167746800220</p>
+								<p class="info__descr-text no-margin">зарегистрировано 25.08.2016 в регионе Москва по адресу:</p>
+								<p class="info__descr-text no-margin">115093, г Москва, улица Павловская, дом 27 СТРОЕНИЕ 4, ЭТАЖ/КОМ 1/13</p>
+							</div>
+						</div>
+					</div>
+					<div class="info__wrapper">
+						<div class="info__title">Поставщикам</div>
+						<div class="info__descr">
+							<div class="info__descr-item">
+								<ul class="info__descr-list info__descr-list_nn">
+									<li class="info__descr-list-item">Вся продукция должна быть сертифицирована</li>
+									<li class="info__descr-list-item">Срок годности не менее 50% от общего срока годности</li>
+									<li class="info__descr-list-item">Все стикеры соответствуют требованиям законодательства</li>
+									<li class="info__descr-list-item">Квартальные промо-акции</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="info__btn">Написать на почту</a>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-wrap">
+				<div class="footer-top">
+					<div class="container">
+						<a href="/">
+							<img class="footer-top__logo" src="img/logo-white.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="footer-middle">
+					<div class="container">
+						<div class="footer-wrapper">
+							<div class="footer-column">
+								<h3>Продукция</h3>
+
+								<div class="footer-menu">
+									<ul>
+										<li><a href="#">Бренды</a></li>
+										<li><a href="#">Уход за лицом</a></li>
+										<li><a href="#">Уход за телом</a></li>
+										<li><a href="#">Уход за волосами</a></li>
+										<li><a href="#">Декоративная косметика</a></li>
+										<li><a href="#">Гигиена</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="footer-column">
+								<h3>Сообщества</h3>
+
+								<div class="footer-menu">
+									<ul>
+										<li><a href="#">Блог</a></li>
+										<li><a href="#">Читайте статьи <br>
+												о наших продуктах</a></li>
+									</ul>
+								</div>
+
+								<div class="footer-soc">
+									<ul>
+										<li>
+											<a href="#">
+												<img src="img/soc1.svg" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/soc2.svg" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/soc3.svg" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/soc4.svg" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/soc5.svg" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/soc6.svg" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/soc7.svg" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/soc8.svg" alt="">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="footer-column">
+								<h3>Инфо</h3>
+
+								<div class="footer-menu">
+									<ul>
+										<li><a href="#">Доставка</a></li>
+										<li><a href="#">Оплата</a></li>
+										<li><a href="#">Возврат</a></li>
+										<li><a href="#">Отзывы</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="footer-column">
+								<h3>Контакты</h3>
+
+								<div class="footer-contacts">
+									<ul>
+										<li><a href="mailtu:zakaz@beforce.ru">zakaz@beforce.ru</a></li>
+										<li><a href="tel:+78005509596">+7 800 550 95 96</a></li>
+									</ul>
+								</div>
+
+								<div class="footer-adress">
+									<p>Пункт самовывоза</p>
+									<p>Москва, Павловская ул., 27 стр. 4</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="footer-pod">
+							<a href="#">Политика конфиденциальности</a>
+							<p>Beauty Force™. 2020. All Rights Reserved</p>
+							<p>Design by Beauty Force</p>
+
+							<div class="footer-select select">
+								<select name="Язык" class="select-two">
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="libs/jquery/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.1/nouislider.min.js"></script>
+
+	<script src="libs/choices/choices.min.js"></script>
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
