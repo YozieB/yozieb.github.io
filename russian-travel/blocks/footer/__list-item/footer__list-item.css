@@ -1,0 +1,11 @@
+.footer__list-item:not(.footer__list-item:first-child) {
+    margin-left: 18px;
+}
+
+
+@media(max-width: 720px) {
+    .footer__list-item:not(.footer__list-item:first-child) {
+        margin-left: 0px;
+        margin-top: 32px;
+    }
+}

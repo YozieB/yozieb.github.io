@@ -1,0 +1,9 @@
+.info__image {
+    box-sizing: border-box;
+    position: relative;
+    background-image: url("../../../images/info-image.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 0;
+    padding: 62.5% 0 0;
+}

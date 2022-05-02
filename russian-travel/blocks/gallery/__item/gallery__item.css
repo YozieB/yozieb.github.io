@@ -1,0 +1,22 @@
+.gallery__item {
+    grid-column: 3 span;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .gallery__item {
+        grid-column: 4 span;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery__item {
+        grid-column: 6 span;
+    }
+}
+
+@media (max-width: 425px) {
+    .gallery__item {
+        grid-column: 12 span;
+    }
+}

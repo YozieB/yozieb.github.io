@@ -1,0 +1,22 @@
+.info {
+    text-align: center;
+    padding: 64px 0 84px;
+}
+
+@media (max-width: 1024px) {
+    .info {
+        padding: 48px 0 92px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        padding: 48px 0 88px;
+    }
+}
+
+@media (max-width: 425px) {
+    .info {
+        padding: 48px 0 64px;
+    }
+}

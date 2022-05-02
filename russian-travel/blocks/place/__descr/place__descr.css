@@ -1,0 +1,18 @@
+.place__descr {
+    grid-column: 6 span;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+}
+
+@media (max-width: 768px) {
+    .place__descr {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .place__descr {
+        grid-area: descr;
+    }
+}

@@ -1,0 +1,10 @@
+.place__img {
+    grid-column: 6 span;
+}
+
+@media (max-width: 600px) {
+    .place__img {
+        width: 100%;
+        grid-area: img;
+    }
+}

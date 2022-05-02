@@ -1,0 +1,10 @@
+.place__info {
+    grid-column: 6 span;
+    align-self: end;
+}
+
+@media (max-width: 600px) {
+    .place__info {
+        grid-area: info;
+    }
+}
