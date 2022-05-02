@@ -1,0 +1,7 @@
+.info__map {
+    position: absolute;
+    width: 95%;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}

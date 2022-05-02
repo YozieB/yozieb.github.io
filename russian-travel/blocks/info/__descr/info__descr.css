@@ -1,0 +1,35 @@
+.info__descr {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0 auto 64px;
+    line-height: 36px;
+    max-width: 640px;
+}
+
+
+@media (max-width: 1024px) {
+    .info__descr {
+        margin: 0 auto 54px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info__descr {
+        margin: 0 auto 56px;
+    }
+}
+
+@media (max-width: 725px) {
+    .info__descr {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 425px) {
+    .info__descr {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 auto 40px;
+    }
+}
