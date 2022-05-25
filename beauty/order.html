@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Бьюти</title>
+    <meta name="description" content="описание">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="icon" href="favicon.png">
+
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="libs/choices/choices.min.css">
+    <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.1/nouislider.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-wrap">
+                        <div class="header-left">
+
+                            <div class="header-select select">
+                                <select name="Язык" class="select-one">
+                                </select>
+                            </div>
+
+                            <div class="header-list">
+                                <ul>
+                                    <li><a href="#">Помощь</a></li>
+                                </ul>
+                            </div>
+
+                            <a class="header__tel" href="tel:+7 800 550 95 96">
+                                <img src="img/whatsapp.svg">
+                                +7 800 550 95 96
+                            </a>
+
+                        </div>
+                        <div class="header-right">
+                            <div class="header-topmenu">
+                                <ul>
+                                    <li><a href="#">Доставка</a></li>
+                                    <li><a href="#">Возврат</a></li>
+                                    <li><a href="#">Оплата</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-wrap">
+                        <div class="header-left">
+                            <div class="header-menuwrap menuwrap">
+                                <div class="menuwrap-icon">
+
+                                    <div class="hamburger" id="hamburger-1">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
+
+                                </div>
+                                Меню
+                            </div>
+
+                            <div class="menuabs">
+                                <ul>
+                                    <li><a href="#">Уход за лицом</a></li>
+                                    <li><a href="#">Уход за телом</a></li>
+                                    <li><a href="#">Уход за волосами</a></li>
+                                    <li><a href="#">Гигиена</a></li>
+                                    <li><a href="#">Мейкап</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="header-logo">
+                                <a href="/">
+                                    <img class="header-logo__desk" src="img/logo.svg" alt="">
+                                    <img class="header-logo__mob" src="img/logomob.svg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="header-search search">
+                                <input type="text" class="search-input" placeholder="Поиск по сайту">
+                                <div class="close-search"></div>
+                                <button type="submit" class="search-button">
+                                    <img src="img/search.svg" alt="">
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="header-right">
+                            <div class="header-card">
+                                <a class="header-card__login" href="#">
+                                    <img src="img/login.svg" alt="">
+                                    Войти
+                                </a>
+                                <a class="header-card__card" href="#">
+                                    <img src="img/card.svg" alt="">
+                                    Корзина <span>( 99 )</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-menuhead">
+                        <ul>
+                            <li><a href="#">Бренды</a></li>
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Beauty Box</a></li>
+                            <li><a href="#">Outlet</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="order">
+                <div class="container">
+                    <h1 class="order__title">
+                        Ваша корзина
+                    </h1>
+                    <div class="order-wrapper">
+                        <div class="order-left">
+                            <div class="order-left__line">
+                                <img loading="lazy" src="img/order-1.png" class="image" width="186" height="186"
+                                    alt="Продукт">
+                                <div class="order-left__info">
+                                    <div class="oder-left__top">
+                                        <a href="#" class="order-left__product">
+                                            Haruharu WONDER Black Rice Hyaluronic
+                                        </a>
+                                        <div class="order-left__product-descr">
+                                            Тонер для лица с гиалуроновой
+                                        </div>
+                                    </div>
+                                    <div class="order-left__bottom">
+                                        <div class="order-left__price">2 090 ₽</div>
+                                        <div class="order-left__amount">
+                                            <span class="order-left__button order-left__down"><img loading="lazy"
+                                                    src="img/minusmobile.svg" class="image" width="16" height="16"
+                                                    alt="Минус"></span>
+                                            <input class="order-left__quantity" type="text" value="1" />
+                                            <span class="order-left__button order-left__up"><img loading="lazy"
+                                                src="img/plus.svg" class="image" width="16" height="16"
+                                                alt="Плюс"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-left__delete">Удалить</div>
+                            </div>
+                            <div class="order-left__line">
+                                <img loading="lazy" src="img/order-1.png" class="image" width="186" height="186"
+                                    alt="Продукт">
+                                <div class="order-left__info">
+                                    <div class="oder-left__top">
+                                        <a href="#" class="order-left__product">
+                                            Haruharu WONDER Black Rice Hyaluronic
+                                        </a>
+                                        <div class="order-left__product-descr">
+                                            Тонер для лица с гиалуроновой
+                                        </div>
+                                    </div>
+                                    <div class="order-left__bottom">
+                                        <div class="order-left__price">2 090 ₽</div>
+                                        <div class="order-left__amount">
+                                            <span class="order-left__button order-left__down"><img loading="lazy"
+                                                    src="img/minusmobile.svg" class="image" width="16" height="16"
+                                                    alt="Минус"></span>
+                                            <input class="order-left__quantity" type="text" value="1" />
+                                            <span class="order-left__button order-left__up"><img loading="lazy"
+                                                src="img/plus.svg" class="image" width="16" height="16"
+                                                alt="Плюс"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-left__delete">Удалить</div>
+                            </div>
+                            <div class="order-left__line">
+                                <img loading="lazy" src="img/order-1.png" class="image" width="186" height="186"
+                                    alt="Продукт">
+                                <div class="order-left__info">
+                                    <div class="oder-left__top">
+                                        <a href="#" class="order-left__product">
+                                            Haruharu WONDER Black Rice Hyaluronic
+                                        </a>
+                                        <div class="order-left__product-descr">
+                                            Тонер для лица с гиалуроновой
+                                        </div>
+                                    </div>
+                                    <div class="order-left__bottom">
+                                        <div class="order-left__price">2 090 ₽</div>
+                                        <div class="order-left__amount">
+                                            <span class="order-left__button order-left__down"><img loading="lazy"
+                                                    src="img/minusmobile.svg" class="image" width="16" height="16"
+                                                    alt="Минус"></span>
+                                            <input class="order-left__quantity" type="text" value="1" />
+                                            <span class="order-left__button order-left__up"><img loading="lazy"
+                                                src="img/plus.svg" class="image" width="16" height="16"
+                                                alt="Плюс"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-left__delete">Удалить</div>
+                            </div>
+                            <h2 class="order__title">Оформить заказ</h2>
+                            <div class="order-left__form">
+                                <div class="order__info">
+                                    <div class="order__info-title">1/3 Введите ваши данные</div>
+                                </div>
+                                <div class="order__data">
+                                    <form action="#" class="order__form">
+                                        <input type="tel" class="order-right__promo order__form-input" placeholder="Номер телефона">
+                                        <input type="email" class="order-right__promo order__form-input" placeholder="Email">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="order-left__form">
+                                <div class="order__info">
+                                    <div class="order__info-title">2/3 Введите ваш адрес</div>
+                                </div>
+                                <div class="order__data">
+                                    <form action="#" class="order__form">
+                                        <input type="text" class="order-right__promo order__form-input" placeholder="Город">
+                                        <input type="text" class="order-right__promo order__form-input" placeholder="Улица">
+                                    </form>
+                                    <form action="#" class="order__form order__form_flex">
+                                        <input type="text" class="order-right__promo order__form-input" placeholder="Дом">
+                                        <input type="text" class="order-right__promo order__form-input order__form-input_margin" placeholder="Подъезд">
+                                    </form>
+                                    <form action="#" class="order__form order__form_flex">
+                                        <input type="text" class="order-right__promo order__form-input" placeholder="Этаж">
+                                        <input type="text" class="order-right__promo order__form-input order__form-input_margin" placeholder="Квартира/офис">
+                                    </form>
+                                    <form action="#">
+                                        <div class="order__form-radio">
+                                            <input type="radio" name="Имя" class="order__form-radio-btn">
+                                            <span class="order__form-radio-main">Курьером</span><span class="order__form-radio-sub">от 1 дня 300 ₽</span>
+                                        </div>
+                                        <div class="order__form-radio">
+                                            <input type="radio" name="Имя" class="order__form-radio-btn">
+                                            <span class="order__form-radio-main">Почта России</span><span class="order__form-radio-sub">от 1 дня 300 ₽</span>
+                                        </div>
+                                        <div class="order__form-radio">
+                                            <input type="radio" name="Имя" class="order__form-radio-btn">
+                                            <span class="order__form-radio-main">CDEK (Курьер)</span><span class="order__form-radio-sub">от 1 дня 300 ₽</span>
+                                        </div>
+                                        <div class="order__form-radio">
+                                            <input type="radio" name="Имя" class="order__form-radio-btn">
+                                            <span class="order__form-radio-main">CDEK (Пункт выдачи)</span><span class="order__form-radio-sub">от 1 дня 300 ₽</span>
+                                        </div>
+                                        <div class="order__form-radio">
+                                            <input type="radio" name="Имя" class="order__form-radio-btn">
+                                            <span class="order__form-radio-main">BoxBerry (Курьер)</span><span class="order__form-radio-sub">от 1 дня 300 ₽</span>
+                                        </div>
+                                        <div class="order__form-radio">
+                                            <input type="radio" name="Имя" class="order__form-radio-btn">
+                                            <span class="order__form-radio-main">BoxBerry (Пункт выдачи)</span><span class="order__form-radio-sub">от 1 дня 300 ₽</span>
+                                        </div>
+                                        <div class="order__form-radio">
+                                            <input type="radio" name="Имя" class="order__form-radio-btn">
+                                            <span class="order__form-radio-main">Самовывоз</span><span class="order__form-radio-sub">от 1 дня 300 ₽</span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="order-left__form">
+                                <div class="order__info">
+                                    <div class="order__info-title">3/3 Оплата</div>
+                                </div>
+                                <div class="order__data">
+                                    <form action="#">
+                                        <div class="order__form-radio">
+                                            <input type="radio" name="Имя" class="order__form-radio-btn">
+                                            <span class="order__form-radio-main">Кредитной картой, Яндекс.Деньгами или телефоном через Яндекс.Кассу</span>
+                                        </div>
+                                        <div class="order__form-radio">
+                                            <input type="radio" name="Имя" class="order__form-radio-btn">
+                                            <span class="order__form-radio-main">Наличными при получении</span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-right">
+                            <div class="order-right__line">
+                                <div class="order-right__info">Сумма заказа</div>
+                                <div class="order-right__sum">200 ₽ </div>
+                            </div>
+                            <div class="order-right__line">
+                                <div class="order-right__info">Доставка</div>
+                                <div class="order-right__sum">200 ₽ </div>
+                            </div>
+                            <div class="order-right__line">
+                                <div class="order-right__info order-right__info_big">Итого</div>
+                                <div class="order-right__sum order-right__sum_big">400 ₽ </div>
+                            </div>
+                            <input class="order-right__promo" type="text" placeholder="Промокод (если есть)">
+                            <button class="order-right__btn">Применить</button>
+                            <button class="info__btn order-right__final-btn">Оформить заказ</button>
+                            <div class="order-right__text">
+                                Нажимая на кнопку “Оформить заказ”, я принимаю условия <a href="#"
+                                    class="order-right__sublink">публичной оферты</a> и <a href="#"
+                                    class="order-right__sublink">политики
+                                    конфидециальности</a>
+                            </div>
+                            <a href="#" class="order-right__delivery-link">
+                                Условия доставки и оплаты
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <div class="container">
+                        <a href="/">
+                            <img class="footer-top__logo" src="img/logo-white.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-middle">
+                    <div class="container">
+                        <div class="footer-wrapper">
+                            <div class="footer-column">
+                                <h3>Продукция</h3>
+
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="#">Бренды</a></li>
+                                        <li><a href="#">Уход за лицом</a></li>
+                                        <li><a href="#">Уход за телом</a></li>
+                                        <li><a href="#">Уход за волосами</a></li>
+                                        <li><a href="#">Декоративная косметика</a></li>
+                                        <li><a href="#">Гигиена</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="footer-column">
+                                <h3>Сообщества</h3>
+
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="#">Блог</a></li>
+                                        <li><a href="#">Читайте статьи <br>
+                                                о наших продуктах</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer-soc">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/soc1.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/soc2.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/soc3.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/soc4.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/soc5.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/soc6.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/soc7.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/soc8.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="footer-column">
+                                <h3>Инфо</h3>
+
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="#">Доставка</a></li>
+                                        <li><a href="#">Оплата</a></li>
+                                        <li><a href="#">Возврат</a></li>
+                                        <li><a href="#">Отзывы</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="footer-column">
+                                <h3>Контакты</h3>
+
+                                <div class="footer-contacts">
+                                    <ul>
+                                        <li><a href="mailtu:zakaz@beforce.ru">zakaz@beforce.ru</a></li>
+                                        <li><a href="tel:+78005509596">+7 800 550 95 96</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer-adress">
+                                    <p>Пункт самовывоза</p>
+                                    <p>Москва, Павловская ул., 27 стр. 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="footer-pod">
+                            <a href="#">Политика конфиденциальности</a>
+                            <p>Beauty Force™. 2020. All Rights Reserved</p>
+                            <p>Design by Beauty Force</p>
+
+                            <div class="footer-select select">
+                                <select name="Язык" class="select-two">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="libs/jquery/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.1/nouislider.min.js"></script>
+
+    <script src="libs/choices/choices.min.js"></script>
+    <script src="libs/swiper/swiper.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/more.js"></script>
+</body>
+
+</html>
